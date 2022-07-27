@@ -1,0 +1,152 @@
+$s: #{"(max-width: 767px)"};
+$m: #{"(min-width: 768px) and (max-width: 1024px)"};
+$l: #{"(min-width: 1025px) and (max-width: 1440px)"};
+$xl: #{"(min-width: 1441px)"};
+
+$grid-count: 12;
+$grid-padding: 18px;
+$name: col;
+
+.container {
+  max-width: 100%;
+  width: 1548px;
+  margin: 0 auto;
+
+  @media all and (max-width: 1600px) {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@mixin col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding-left: $grid-padding;
+  padding-right: $grid-padding;
+}
+
+// ****** for css ******************
+.row {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$grid-padding;
+  margin-right: -$grid-padding;
+}
+
+[class^="col_"] {
+  flex: none;
+  min-height: 1px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding-left: $grid-padding;
+  padding-right: $grid-padding;
+  box-sizing: border-box;
+
+  &.no_padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.no_padding_left {
+    padding-left: 0;
+  }
+
+  &.no_padding_right {
+    padding-right: 0;
+  }
+}
+
+// finish grid ----------------------
+@for $i from 1 through $grid-count {
+  .#{$name}_#{$i} {
+    min-width: $i * (100% / $grid-count);
+    max-width: $i * (100% / $grid-count);
+    flex-basis: $i * (100% / $grid-count);
+  }
+}
+
+// order----------------------
+@mixin order($name) {
+  @for $i from 1 through 12 {
+    .order_#{$name}_#{$i} {
+      order: $i;
+    }
+  }
+}
+
+// Media
+@mixin make_grid($size) {
+  .#{$size}_hide {
+    display: none !important;
+  }
+  .#{$size}_show {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .#{$size}_show_b {
+    display: block !important;
+  }
+  .col_#{$size}_auto {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .col_#{$size} {
+    @include col;
+  }
+}
+
+@mixin offset($size) {
+  @for $i from 1 through $grid-count {
+    .#{$size}_offset_#{$i} {
+      margin-left: calc(
+        (#{$i} * (100% / #{$grid-count})) + (#{$grid-padding} * (#{$i} - 2))
+      );
+    }
+  }
+}
+
+@mixin col_size($size) {
+  @for $i from 1 through $grid-count {
+    .col_#{$size}_#{$i} {
+      min-width: $i * (100% / $grid-count);
+      max-width: $i * (100% / $grid-count);
+      flex-basis: $i * (100% / $grid-count);
+    }
+  }
+}
+
+@media #{$s} {
+  @include make_grid(s);
+  @include offset(s);
+  @include col_size(s);
+  @include order(s);
+}
+
+@media #{$m} {
+  @include make_grid(m);
+  @include offset(m);
+  @include col_size(m);
+  @include order(m);
+}
+
+@media #{$l} {
+  @include make_grid(l);
+  @include offset(l);
+  @include col_size(l);
+  @include order(l);
+}
+
+@media #{$xl} {
+  @include make_grid(xl);
+  @include offset(xl);
+  @include col_size(xl);
+  @include order(xl);
+}
