@@ -1461,4 +1461,50 @@ h6 {
   left: -20px;
   top: 10px;
   background: url("../img/rotated_red_square.svg") no-repeat center/contain;
+}
+
+.game_item .arrow {
+  border-right: 2px solid #737373;
+  border-top: 2px solid #737373;
+  transform: rotate(0);
+  transition: border-right 180ms, border-top 180ms, transform 180ms;
+}
+.game_item .arrow:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -2px;
+  width: 15px;
+  transform: rotate(-45deg);
+  border-top: 2px solid #737373;
+}
+.game_item .arrow p {
+  transition: color 180ms;
+}
+.game_item:hover p, .game_item.active p {
+  color: #c13001;
+  transition: color 180ms;
+}
+.game_item:hover .arrow, .game_item.active .arrow {
+  transform: rotate(45deg);
+  border-right: 2px solid #c13001;
+  border-top: 2px solid #c13001;
+  transition: border-right 180ms, border-top 180ms, transform 180ms;
+}
+.game_item:hover .arrow:after, .game_item.active .arrow:after {
+  transition: border-top 180ms;
+  border-top: 2px solid #c13001;
+}
+.game_item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 36px;
+  right: 36px;
+  height: 2px;
+  background-color: rgba(14, 14, 14, 0.05);
+}
+
+.lucky_six {
+  background-image: linear-gradient(115deg, #2b7ebb 0%, #87c7f8 100%);
 }/*# sourceMappingURL=styles.css.map */
