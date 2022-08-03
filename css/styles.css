@@ -389,40 +389,40 @@ a h6 {
     padding-right: 18px;
   }
   .s_offset_1 {
-    margin-left: calc((1 * (100% / 12)) + (18px * (1 - 2)));
+    margin-left: calc(1 * (100% / 12));
   }
   .s_offset_2 {
-    margin-left: calc((2 * (100% / 12)) + (18px * (2 - 2)));
+    margin-left: calc(2 * (100% / 12));
   }
   .s_offset_3 {
-    margin-left: calc((3 * (100% / 12)) + (18px * (3 - 2)));
+    margin-left: calc(3 * (100% / 12));
   }
   .s_offset_4 {
-    margin-left: calc((4 * (100% / 12)) + (18px * (4 - 2)));
+    margin-left: calc(4 * (100% / 12));
   }
   .s_offset_5 {
-    margin-left: calc((5 * (100% / 12)) + (18px * (5 - 2)));
+    margin-left: calc(5 * (100% / 12));
   }
   .s_offset_6 {
-    margin-left: calc((6 * (100% / 12)) + (18px * (6 - 2)));
+    margin-left: calc(6 * (100% / 12));
   }
   .s_offset_7 {
-    margin-left: calc((7 * (100% / 12)) + (18px * (7 - 2)));
+    margin-left: calc(7 * (100% / 12));
   }
   .s_offset_8 {
-    margin-left: calc((8 * (100% / 12)) + (18px * (8 - 2)));
+    margin-left: calc(8 * (100% / 12));
   }
   .s_offset_9 {
-    margin-left: calc((9 * (100% / 12)) + (18px * (9 - 2)));
+    margin-left: calc(9 * (100% / 12));
   }
   .s_offset_10 {
-    margin-left: calc((10 * (100% / 12)) + (18px * (10 - 2)));
+    margin-left: calc(10 * (100% / 12));
   }
   .s_offset_11 {
-    margin-left: calc((11 * (100% / 12)) + (18px * (11 - 2)));
+    margin-left: calc(11 * (100% / 12));
   }
   .s_offset_12 {
-    margin-left: calc((12 * (100% / 12)) + (18px * (12 - 2)));
+    margin-left: calc(12 * (100% / 12));
   }
   .col_s_1 {
     min-width: 8.3333333333%;
@@ -550,40 +550,40 @@ a h6 {
     padding-right: 18px;
   }
   .m_offset_1 {
-    margin-left: calc((1 * (100% / 12)) + (18px * (1 - 2)));
+    margin-left: calc(1 * (100% / 12));
   }
   .m_offset_2 {
-    margin-left: calc((2 * (100% / 12)) + (18px * (2 - 2)));
+    margin-left: calc(2 * (100% / 12));
   }
   .m_offset_3 {
-    margin-left: calc((3 * (100% / 12)) + (18px * (3 - 2)));
+    margin-left: calc(3 * (100% / 12));
   }
   .m_offset_4 {
-    margin-left: calc((4 * (100% / 12)) + (18px * (4 - 2)));
+    margin-left: calc(4 * (100% / 12));
   }
   .m_offset_5 {
-    margin-left: calc((5 * (100% / 12)) + (18px * (5 - 2)));
+    margin-left: calc(5 * (100% / 12));
   }
   .m_offset_6 {
-    margin-left: calc((6 * (100% / 12)) + (18px * (6 - 2)));
+    margin-left: calc(6 * (100% / 12));
   }
   .m_offset_7 {
-    margin-left: calc((7 * (100% / 12)) + (18px * (7 - 2)));
+    margin-left: calc(7 * (100% / 12));
   }
   .m_offset_8 {
-    margin-left: calc((8 * (100% / 12)) + (18px * (8 - 2)));
+    margin-left: calc(8 * (100% / 12));
   }
   .m_offset_9 {
-    margin-left: calc((9 * (100% / 12)) + (18px * (9 - 2)));
+    margin-left: calc(9 * (100% / 12));
   }
   .m_offset_10 {
-    margin-left: calc((10 * (100% / 12)) + (18px * (10 - 2)));
+    margin-left: calc(10 * (100% / 12));
   }
   .m_offset_11 {
-    margin-left: calc((11 * (100% / 12)) + (18px * (11 - 2)));
+    margin-left: calc(11 * (100% / 12));
   }
   .m_offset_12 {
-    margin-left: calc((12 * (100% / 12)) + (18px * (12 - 2)));
+    margin-left: calc(12 * (100% / 12));
   }
   .col_m_1 {
     min-width: 8.3333333333%;
@@ -711,40 +711,40 @@ a h6 {
     padding-right: 18px;
   }
   .l_offset_1 {
-    margin-left: calc((1 * (100% / 12)) + (18px * (1 - 2)));
+    margin-left: calc(1 * (100% / 12));
   }
   .l_offset_2 {
-    margin-left: calc((2 * (100% / 12)) + (18px * (2 - 2)));
+    margin-left: calc(2 * (100% / 12));
   }
   .l_offset_3 {
-    margin-left: calc((3 * (100% / 12)) + (18px * (3 - 2)));
+    margin-left: calc(3 * (100% / 12));
   }
   .l_offset_4 {
-    margin-left: calc((4 * (100% / 12)) + (18px * (4 - 2)));
+    margin-left: calc(4 * (100% / 12));
   }
   .l_offset_5 {
-    margin-left: calc((5 * (100% / 12)) + (18px * (5 - 2)));
+    margin-left: calc(5 * (100% / 12));
   }
   .l_offset_6 {
-    margin-left: calc((6 * (100% / 12)) + (18px * (6 - 2)));
+    margin-left: calc(6 * (100% / 12));
   }
   .l_offset_7 {
-    margin-left: calc((7 * (100% / 12)) + (18px * (7 - 2)));
+    margin-left: calc(7 * (100% / 12));
   }
   .l_offset_8 {
-    margin-left: calc((8 * (100% / 12)) + (18px * (8 - 2)));
+    margin-left: calc(8 * (100% / 12));
   }
   .l_offset_9 {
-    margin-left: calc((9 * (100% / 12)) + (18px * (9 - 2)));
+    margin-left: calc(9 * (100% / 12));
   }
   .l_offset_10 {
-    margin-left: calc((10 * (100% / 12)) + (18px * (10 - 2)));
+    margin-left: calc(10 * (100% / 12));
   }
   .l_offset_11 {
-    margin-left: calc((11 * (100% / 12)) + (18px * (11 - 2)));
+    margin-left: calc(11 * (100% / 12));
   }
   .l_offset_12 {
-    margin-left: calc((12 * (100% / 12)) + (18px * (12 - 2)));
+    margin-left: calc(12 * (100% / 12));
   }
   .col_l_1 {
     min-width: 8.3333333333%;
@@ -872,40 +872,40 @@ a h6 {
     padding-right: 18px;
   }
   .xl_offset_1 {
-    margin-left: calc((1 * (100% / 12)) + (18px * (1 - 2)));
+    margin-left: calc(1 * (100% / 12));
   }
   .xl_offset_2 {
-    margin-left: calc((2 * (100% / 12)) + (18px * (2 - 2)));
+    margin-left: calc(2 * (100% / 12));
   }
   .xl_offset_3 {
-    margin-left: calc((3 * (100% / 12)) + (18px * (3 - 2)));
+    margin-left: calc(3 * (100% / 12));
   }
   .xl_offset_4 {
-    margin-left: calc((4 * (100% / 12)) + (18px * (4 - 2)));
+    margin-left: calc(4 * (100% / 12));
   }
   .xl_offset_5 {
-    margin-left: calc((5 * (100% / 12)) + (18px * (5 - 2)));
+    margin-left: calc(5 * (100% / 12));
   }
   .xl_offset_6 {
-    margin-left: calc((6 * (100% / 12)) + (18px * (6 - 2)));
+    margin-left: calc(6 * (100% / 12));
   }
   .xl_offset_7 {
-    margin-left: calc((7 * (100% / 12)) + (18px * (7 - 2)));
+    margin-left: calc(7 * (100% / 12));
   }
   .xl_offset_8 {
-    margin-left: calc((8 * (100% / 12)) + (18px * (8 - 2)));
+    margin-left: calc(8 * (100% / 12));
   }
   .xl_offset_9 {
-    margin-left: calc((9 * (100% / 12)) + (18px * (9 - 2)));
+    margin-left: calc(9 * (100% / 12));
   }
   .xl_offset_10 {
-    margin-left: calc((10 * (100% / 12)) + (18px * (10 - 2)));
+    margin-left: calc(10 * (100% / 12));
   }
   .xl_offset_11 {
-    margin-left: calc((11 * (100% / 12)) + (18px * (11 - 2)));
+    margin-left: calc(11 * (100% / 12));
   }
   .xl_offset_12 {
-    margin-left: calc((12 * (100% / 12)) + (18px * (12 - 2)));
+    margin-left: calc(12 * (100% / 12));
   }
   .col_xl_1 {
     min-width: 8.3333333333%;
@@ -1076,7 +1076,6 @@ a h6 {
   background: none;
   color: inherit;
   border: none;
-  padding: 0 !important;
   font: inherit;
 }
 .owl-carousel.owl-loaded {
@@ -1270,6 +1269,7 @@ nav {
 header {
   background-color: #0e0e0e;
   height: 75px;
+  z-index: 51;
 }
 
 main {
@@ -1374,6 +1374,14 @@ h6 {
   font-size: 23px;
   font-weight: 700;
   letter-spacing: 1.15px;
+}
+.products img {
+  transform: rotate(0);
+  transition: transform 180ms;
+}
+.products.active img:last-child {
+  transform: rotate(180deg);
+  transition: transform 180ms;
 }
 
 .footer_year {
@@ -1507,4 +1515,142 @@ h6 {
 
 .lucky_six {
   background-image: linear-gradient(115deg, #2b7ebb 0%, #87c7f8 100%);
+}
+
+.games_table .table-row-group {
+  background-color: #fff;
+  transition: background-color 180ms;
+}
+.games_table .table-row-group:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+.games_table .table-row-group:hover {
+  background-color: rgba(193, 48, 1, 0.14);
+  transition: background-color 180ms;
+}
+.games_table .table-cell {
+  transition: background-color 180ms;
+}
+.games_table .table_collumn_hover {
+  background-color: rgba(193, 48, 1, 0.14);
+  transition: background-color 180ms;
+}
+
+.game_top {
+  height: calc(100vh - 75px);
+}
+.game_top::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  background-image: linear-gradient(-89deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.73) 100%);
+}
+
+.section_404, .main_mav {
+  height: calc(100vh - 75px);
+}
+
+.main_mav {
+  transform: translateY(-100%);
+  transition: transform 180ms;
+}
+.main_mav.active {
+  transform: translateY(0);
+  transition: transform 180ms;
+}
+
+.modal_overlay {
+  z-index: 52;
+  background-color: rgba(14, 14, 14, 0.5);
+}
+
+.owl-nav {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  pointer-events: all;
+  padding: 10px;
+  opacity: 1;
+  transition: opacity 180ms;
+}
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+  opacity: 0.7;
+  transition: opacity 180ms;
+}
+.owl-nav .owl-prev::before, .owl-nav .owl-next::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 28px;
+  background: url("../img/carousel_arrow_left.svg") no-repeat center/contain;
+}
+.owl-nav .owl-next::before {
+  transform: rotate(180deg);
+}
+
+.awards_carousel .owl-nav {
+  width: 130%;
+  margin-left: -15%;
+  display: flex !important;
+}
+.awards_carousel .owl-nav .owl-prev::before, .awards_carousel .owl-nav .owl-next::before {
+  width: 23px;
+  height: 45px;
+}
+
+.testimonials_carousel .owl-nav {
+  height: 100%;
+}
+.testimonials_carousel .owl-nav .owl-prev, .testimonials_carousel .owl-nav .owl-next {
+  height: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.main_top_games_carousel {
+  margin-left: -15px;
+}
+
+.style_input {
+  border: 1px solid rgba(0, 0, 0, 0.61);
+}
+
+.image-source-link {
+  color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
 }/*# sourceMappingURL=styles.css.map */

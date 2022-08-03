@@ -69,6 +69,7 @@ nav {
 header {
   background-color: $dark;
   height: 75px;
+  z-index: 51;
 }
 
 main {
@@ -178,6 +179,18 @@ h6 {
   font-size: 23px;
   font-weight: 700;
   letter-spacing: 1.15px;
+
+  img {
+    transform: rotate(0);
+    transition: transform 180ms;
+  }
+
+  &.active {
+    img:last-child {
+      transform: rotate(180deg);
+      transition: transform 180ms;
+    }
+  }
 }
 
 .footer_year {
@@ -336,3 +349,164 @@ h6 {
 .lucky_six {
   background-image: linear-gradient(115deg, #2b7ebb 0%, #87c7f8 100%);
 }
+
+.games_table {
+  .table-row-group {
+    background-color: #fff;
+    transition: background-color 180ms;
+
+    &:nth-child(odd) {
+      background-color: $grey;
+    }
+
+    &:hover {
+      background-color: rgba(193, 48, 1, 0.14);
+      transition: background-color 180ms;
+    }
+  }
+
+  .table-cell {
+    transition: background-color 180ms;
+  }
+
+  .table_collumn_hover {
+    background-color: rgba(193, 48, 1, 0.14);
+    transition: background-color 180ms;
+  }
+}
+
+.game_top {
+  height: calc(100vh - 75px);
+
+  &::before {
+    z-index: 1;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    background-image: linear-gradient(-89deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.73) 100%);
+  }
+}
+
+.section_404, .main_mav {
+  height: calc(100vh - 75px);
+}
+
+.main_mav {
+  transform: translateY(-100%);
+  transition: transform 180ms;
+
+  &.active {
+    transform: translateY(0);
+    transition: transform 180ms;
+  }
+}
+
+.modal_overlay {
+  z-index: 52;
+  background-color: rgba(14, 14, 14, 0.5);
+}
+
+.owl-nav {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .owl-prev, .owl-next {
+    pointer-events: all;
+    padding: 10px;
+    opacity: 1;
+    transition: opacity 180ms;
+
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 180ms;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 28px;
+      background: url("../img/carousel_arrow_left.svg") no-repeat center / contain;
+    }
+  }
+
+  .owl-next {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.awards_carousel {
+  .owl-nav {
+    width: 130%;
+    margin-left: -15%;
+    display: flex !important;
+
+    .owl-prev, .owl-next {
+      &::before {
+        width: 23px;
+        height: 45px;
+      }
+    }
+  }
+}
+
+.testimonials_carousel {
+  .owl-nav {
+    height: 100%;
+
+    .owl-prev, .owl-next {
+      height: 100%;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
+.main_top_games_carousel {
+  margin-left: -15px;
+}
+
+.style_input {
+  border: 1px solid rgba(0, 0, 0, 0.61);
+}
+
+// img popap regio
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+// regio end

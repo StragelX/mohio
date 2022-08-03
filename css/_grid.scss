@@ -107,7 +107,7 @@ $name: col;
   @for $i from 1 through $grid-count {
     .#{$size}_offset_#{$i} {
       margin-left: calc(
-        (#{$i} * (100% / #{$grid-count})) + (#{$grid-padding} * (#{$i} - 2))
+        (#{$i} * (100% / #{$grid-count}))
       );
     }
   }
