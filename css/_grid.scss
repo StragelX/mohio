@@ -8,8 +8,8 @@ $grid-padding: 18px;
 $name: col;
 
 .container {
-  max-width: 100%;
-  width: 1548px;
+  width: 100%;
+  max-width: 1548px !important;
   margin: 0 auto;
 
   @media all and (max-width: 1600px) {

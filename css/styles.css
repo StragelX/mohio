@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/segoeUI/segoeuI.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/segoeUI/segoeuIbold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/ubuntu/Ubuntu-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/ubuntu/Ubuntu-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/ubuntu/Ubuntu-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/ubuntu/Ubuntu-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
 html {
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
@@ -249,8 +285,8 @@ a h6 {
 }
 
 .container {
-  max-width: 100%;
-  width: 1548px;
+  width: 100%;
+  max-width: 1548px !important;
   margin: 0 auto;
 }
 @media all and (max-width: 1600px) {
@@ -1234,7 +1270,7 @@ a h6 {
 }
 
 .font_ubuntu {
-  font-family: Ubuntu;
+  font-family: "Ubuntu";
 }
 
 .color_b2 {
@@ -1297,6 +1333,18 @@ footer {
   text-transform: uppercase;
   transition: background-color 180ms, color 180ms;
 }
+@media all and (max-width: 767px) {
+  .btn.w-full {
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .btn {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
 .btn.orange {
   background-color: #c13001;
   border: 1px solid #c13001;
@@ -1342,7 +1390,7 @@ footer {
 
 h1, h2, h4, h5, h5, h6 {
   color: #0e0e0e;
-  font-family: Ubuntu;
+  font-family: "Ubuntu";
   font-weight: 700;
 }
 
@@ -1388,6 +1436,16 @@ h6 {
   right: 285px;
   top: -64px;
 }
+@media all and (max-width: 1700px) {
+  .footer_year {
+    right: 100px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .footer_year {
+    right: 50px;
+  }
+}
 
 .divider {
   border-bottom: 1px solid #292929;
@@ -1419,6 +1477,18 @@ h6 {
 .products_section {
   background: url("../img/products_bg.jpg") no-repeat center/cover;
 }
+@media all and (max-width: 1370px) {
+  .products_section {
+    padding-top: 5vh !important;
+    padding-bottom: 5vh !important;
+  }
+}
+@media all and (max-width: 767px) {
+  .products_section {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+}
 
 .breadcrumbs_divider {
   border-top: 6px solid transparent;
@@ -1442,8 +1512,13 @@ h6 {
 
 .text-section h1, .text-section h2, .text-section h3, .text-section h4, .text-section h5, .text-section h6 {
   color: #0e0e0e;
-  font-family: Ubuntu;
+  font-family: "Ubuntu";
   margin-bottom: 24px;
+}
+@media all and (max-width: 767px) {
+  .text-section h1, .text-section h2, .text-section h3, .text-section h4, .text-section h5, .text-section h6 {
+    font-size: 22px;
+  }
 }
 .text-section p {
   color: #121111;
@@ -1451,12 +1526,22 @@ h6 {
   font-weight: 400;
   margin-bottom: 32px;
 }
+@media all and (max-width: 767px) {
+  .text-section p {
+    font-size: 14px;
+  }
+}
 .text-section ul {
   padding-left: 24px;
   margin-bottom: 16px;
 }
 .text-section ul li {
   font-size: 16px;
+}
+@media all and (max-width: 767px) {
+  .text-section ul li {
+    font-size: 14px;
+  }
 }
 .text-section ul li p {
   margin-bottom: 8px;
@@ -1554,8 +1639,20 @@ h6 {
   height: calc(100vh - 75px);
 }
 
+@media all and (max-width: 1024px) {
+  .section_404 {
+    height: auto;
+    min-height: 600px;
+  }
+}
+@media all and (max-width: 767px) {
+  .section_404 {
+    min-height: 330px;
+  }
+}
+
 .main_mav {
-  transform: translateY(-100%);
+  transform: translateY(-150%);
   transition: transform 180ms;
 }
 .main_mav.active {
@@ -1605,6 +1702,17 @@ h6 {
   margin-left: -15%;
   display: flex !important;
 }
+@media all and (max-width: 1050px) {
+  .awards_carousel .owl-nav {
+    width: 120%;
+    margin-left: -10%;
+  }
+}
+@media all and (max-width: 767px) {
+  .awards_carousel .owl-nav {
+    display: none !important;
+  }
+}
 .awards_carousel .owl-nav .owl-prev::before, .awards_carousel .owl-nav .owl-next::before {
   width: 23px;
   height: 45px;
@@ -1612,6 +1720,11 @@ h6 {
 
 .testimonials_carousel .owl-nav {
   height: 100%;
+}
+@media all and (max-width: 767px) {
+  .testimonials_carousel .owl-nav {
+    display: none !important;
+  }
 }
 .testimonials_carousel .owl-nav .owl-prev, .testimonials_carousel .owl-nav .owl-next {
   height: 100%;
@@ -1621,6 +1734,11 @@ h6 {
 
 .main_top_games_carousel {
   margin-left: -15px;
+}
+@media all and (max-width: 767px) {
+  .main_top_games_carousel {
+    margin-left: 0;
+  }
 }
 
 .style_input {
@@ -1635,7 +1753,6 @@ h6 {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -1653,4 +1770,43 @@ h6 {
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
+}
+
+@media all and (max-width: 1441px) {
+  .top_nav {
+    padding-right: 6rem;
+  }
+}
+
+@media all and (max-width: 1025px) {
+  .footer_about {
+    margin-bottom: 50px;
+  }
+}
+
+@media all and (max-width: 1025px) {
+  .one_big_news {
+    margin-top: 16px;
+  }
+}
+
+.show_mob_nav.active .hidden {
+  display: block;
+}
+.show_mob_nav.active .shown {
+  display: none;
+}
+
+.mob_nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateX(-100%);
+  transition: transform 180ms;
+}
+.mob_nav.active {
+  transform: translateX(0);
+  transition: transform 180ms;
+}
+
+.mob_inner_menu {
+  height: calc(100vh - 75px);
 }/*# sourceMappingURL=styles.css.map */

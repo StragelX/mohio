@@ -20,15 +20,21 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col_11 flex no_padding_right">
-                    <nav class="flex items-center justify-between w-full pr-4">
+                <div class="col_xl_11 col_l_10 flex no_padding_right px-0 lg:pl-[18px]">
+                    <nav class="flex items-center justify-between w-full pr-4 top_nav">
+                        <button class="h-[75px] px-3 flex items-center justify-center show_mob_nav l_hide xl_hide">
+                            <img src="img/burger_icon.svg" alt="" class="shown">
+
+                            <img src="img/burger_cros_icon.svg" alt="" class="hidden">
+                        </button>
+
                         <div class="flex items-center h-full">
                             <a href="index.html" class="flex-none">
-                                <img src="img/logo.svg" alt="">
+                                <img src="img/logo.svg" alt="" class="h-8 md:h-auto">
                             </a>
                         </div>
 
-                        <div class="flex h-full items-stretch">
+                        <div class="lg:flex lg:h-full lg:items-stretch top_nav s_hide m_hide">
                             <a href="about.html" class="px-4 text-lg text-white flex items-center hover:text-rad">About us</a>
                             <a href="cooperat.html" class="px-4 text-lg text-white flex items-center hover:text-rad">Cooperation</a>
                             <a href="news.html" class="px-4 text-lg text-white flex items-center hover:text-rad">News</a>
@@ -40,68 +46,98 @@
             </div>
         </div>
 
-        <div class="flex-none h-full cursor-pointer flex items-center gap-4 pl-6 pr-8 products text-white absolute right-0 top-0 bg-rad">
-            <img src="img/logo_compact.svg" alt="">
+        <div class="flex-none h-full cursor-pointer flex items-center px-2 gap-2 md:gap-4 md:pl-6 md:pr-8 products text-white absolute right-0 top-0 bg-rad">
+            <img src="img/logo_compact.svg" alt="" class="w-7 md:w-auto">
 
-            <span class="capitalize cursor-pointer">Products</span>
+            <span class="cursor-pointer uppercase text-base md:text-[23px]">Products</span>
 
             <img src="img/down_arrow_icon.svg" alt="">
         </div>
     </header>
 
-    <nav class="absolute main_mav top-[75px] w-full bg-grey z-50 flex flex-col">
-        <section class="pt-28 pb-24 products_section">
+    <nav class="mob_nav l_hide xl_hide fixed top-[75px] bottom-0 left-0 right-0 z-[100] h-screen">
+        <div class="mob_inner_menu bg-dark px-4 py-4 w-56 flex flex-col">
+            <a href="about.html" class="text-lg text-white block py-3">About us</a>
+            <a href="cooperat.html" class="text-lg text-white block py-3">Cooperation</a>
+            <a href="news.html" class="text-lg text-white block py-3">News</a>
+            <a href="career.html" class="text-lg text-white block py-3">Career</a>
+            <a href="contant.html" class="text-lg text-white block py-3">Contact</a>
+            <a href="games.html" class="text-lg text-white block py-3">Games</a>
+            <a href="services.html" class="text-lg text-white block py-3">Service & Support</a>
+            <a href="distribution_channels.html" class="text-lg text-white block py-3">Distribution</a>
+
+            <div class="flex-1 flex flex-col justify-end opacity-70">
+                <p class="text-white opacity-70 text-xs font-light">phone:</p>
+                <a href="tel:+43 732 918990" class="text-white text-base font-normal mb-3">+43 732 918990</a>
+
+                <p class="text-white opacity-70 text-xs font-light">E-mail:</p>
+                <a href="mailto:offer@mohiogaming.com" class="text-white text-base font-normal mb-3">offer@mohiogaming.com</a>
+
+                <div class="flex items-center justify-between mb-4">
+                    <a href=""><img src="img/is_icon.svg" alt=""></a>
+                    <a href=""><img src="img/fb_icon.svg" alt=""></a>
+                    <a href=""><img src="img/yt_icon.svg" alt=""></a>
+                    <a href=""><img src="img/tw_icon.svg" alt=""></a>
+                </div>
+
+                <p class="text-white opacity-50 text-xs font-light">The Best of Cutting Edge Technologies for The Betting Shops</p>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="fixed overflow-hidden main_mav top-[75px] w-full bg-grey z-50 flex flex-col">
+        <section class="xl:py-[11vh] products_section">
             <div class="container">
                 <div class="row">
                     <div class="col_xl_10 xl_offset_1 col_l_10 l_offset_1 col_m_12 col_s_12">
-                        <p class="font_ubuntu text-dark font-bold text-[32px] mb-6">Gaming Platform</p>
+                        <p class="font_ubuntu text-dark font-bold text-[24px] md:text-[32px] mb-3 md:mb-6">Gaming Platform</p>
 
-                        <div class="grid grid-cols-3 grid-rows-2">
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-rows-2">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
                             </a>
 
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
                             </a>
 
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
                             </a>
 
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
                             </a>
 
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
@@ -114,27 +150,27 @@
             </div>
         </section>
 
-        <section class="bg-dark flex-1 pt-10">
+        <section class="bg-dark flex-1 pt-4 lg:pt-10">
             <div class="container">
                 <div class="row">
-                    <div class="col_xl_2 col_l_2 col_m_6">
-                        <p class="text-white font_ubuntu text-xl font-bold mb-3">Service & Support</p>
+                    <div class="col_xl_2 col_l_2 col_m_6 col_s_6">
+                        <p class="text-white font_ubuntu text-base md:text-xl font-bold mb-3">Service & Support</p>
 
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">technical functioning</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">improvement</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 block"></a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">technical functioning</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">improvement</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 block"></a>
                     </div>
 
-                    <div class="col_xl_4 col_l_4 col_m_6">
-                        <p class="text-white font_ubuntu text-xl font-bold mb-3">Distribution</p>
+                    <div class="col_xl_2 col_l_2 col_m_6 col_s_6">
+                        <p class="text-white font_ubuntu text-base md:text-xl font-bold mb-3">Distribution</p>
 
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">retail batting shop</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">self-service terminal shop</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">online solution</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">terminal shop</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">retail batting shop</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">self-service terminal shop</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">online solution</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">terminal shop</a>
                     </div>
 
-                    <div class="col_xl_2 col_l_2 col_m_6">
+                    <div class="col_xl_2 col_l_3 m_hide s_hide">
                         <p class="text-white font_ubuntu text-xl font-bold mb-1">Main Office</p>
 
                         <p class="text-white text-xs font-light">phone:</p>
@@ -147,7 +183,7 @@
                         <a href="mailto:offer@mohiogaming.com" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-3 block">offer@mohiogaming.com</a>
                     </div>
 
-                    <div class="col_xl_2 col_l_2 col_m_6">
+                    <div class="col_xl_3 col_l_3 m_hide s_hide">
                         <p class="text-white font_ubuntu text-xl font-bold mb-1">Back Office</p>
 
                         <p class="text-white text-xs font-light">phone:</p>
@@ -160,13 +196,13 @@
                         <a href="mailto:offer@mohiogaming.com" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-3 block">offer@mohiogaming.com</a>
                     </div>
 
-                    <div class="col_xl_2 col_l_2 col_m_6">
+                    <div class="col_xl_2 col_l_2 m_hide s_hide">
                         <img src="img/big_menu_logo_compact.png" alt="" class="w-48">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col_12">
+                    <div class="col_12 s_hide">
                         <div class="mt-12 border-t-1 border-t-[#262626] pt-4 flex justify-between items-center">
                             <div class="flex items-center gap-4">
                                 <a href="" class="block h-full opacity-70 hover:opacity-100">
@@ -186,7 +222,7 @@
                                 </a>
                             </div>
 
-                            <p class="text-white text-base font-light opacity-70">The Best of Cutting Edge Technologies for The Betting Shops </p>
+                            <p class="text-white text-base font-light opacity-70">The Best of Cutting Edge Technologies for The Betting Shops</p>
 
                             <p class="text-white text-base font-light opacity-70">© 2020 mohiogaming All rights reserved</p>
                         </div>
@@ -197,28 +233,28 @@
     </nav>
 
     <main>
-        <section class="main_top pt-10">
+        <section class="main_top pt-10 pb-10 md:pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col_xl_8 col_l_8">
                         <div class="flex items-center gap-3 mb-2">
                             <img src="img/rotated_red_square.svg" alt="">
     
-                            <h3 class="Providing font-light text-4xl text-black">Providing </h3>
+                            <h3 class="Providing font-light text-[24px] md:text-4xl text-black">Providing</h3>
                         </div>
 
-                        <h1 class="font_ubuntu font-bold text-[80px] text-black leading-[78px] mb-3">
+                        <h1 class="font_ubuntu font-bold text-[36px] leading-tight lg:text-[80px] text-black md:leading-[78px] mb-3">
                             The Best of Cutting Edge Technologies for The Betting Shops 
                         </h1>
 
-                        <h2 class="text-rad font_ubuntu font-light text-4xl mb-10 mt-8">Top-revenue betting products</h2>
+                        <h2 class="text-rad font_ubuntu font-light text-lg md:text-4xl mb-10 md:mt-8">Top-revenue betting products</h2>
 
                         <button class="btn orange mb-10">order consultation</button>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col_12">
+                    <div class="col_12 px-0 md:px-[18px]">
                         <div class="main_top_games_carousel owl-carousel">
                             <div>
                                 <a href="" class="h-[200px] bg-white game_card my-5 mx-[18.5px] flex flex-col items-center justify-center">
@@ -266,22 +302,22 @@
             </div>
         </section>
 
-        <section class="pt-10 pb-[108px] products_section">
+        <section class="pt-10 pb-[108px] products_section z-10">
             <div class="container">
                 <div class="row">
                     <div class="col_12">
-                        <div class="absolute top-[110px] right-0">
+                        <div class="absolute top-[-85px] md:top-[110px] right-0 m_hide">
                             <img src="img/six_hour_demo.png" alt="">
                         </div>
 
                         <img src="img/rotated_red_square.svg" alt="" class="-mb-2">
 
-                        <h2 class="text-[64px] -mb-2">products</h2>
+                        <h2 class="text-[32px] md:text-[64px] -mb-2">products</h2>
 
-                        <p class="text-rad font_ubuntu font-normal text-2xl mb-6">First class</p>
+                        <p class="text-rad font_ubuntu font-normal text-lg md:text-2xl mb-6">First class</p>
                     </div>
 
-                    <div class="col_xl_3 col_l_3 col_m_3">
+                    <div class="col_xl_3 col_l_3 col_m_12">
                         <p class="text-base font-normal leading-[27px] text-[#121111] mb-4">
                             The MOHIO Sports portfolio is constantly
                             expanding and currently consists of more than
@@ -303,12 +339,12 @@
                             Sportsbook Solution u Card Games.
                         </p>
 
-                        <button class="text-rad text-base font-normal mt-4">see more...</button>
+                        <button class="text-rad text-base font-normal mt-4 mb-6">see more...</button>
                     </div>
 
-                    <div class="xl_offset_1 l_offset_1 m_offset_1"></div>
+                    <div class="xl_offset_1 l_offset_1 m_hide"></div>
 
-                    <div class="col_xl_3 col_l_3 col_m_3">
+                    <div class="col_xl_3 col_l_3 col_m_6">
                         <div class="flex items-center gap-[22px] mb-[60px]">
                             <img src="img/racing-car.png" alt="">
 
@@ -329,7 +365,7 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-[22px]">
+                        <div class="flex items-center gap-[22px] mb-[60px] md:mb-0">
                             <img src="img/racing-car.png" alt="">
 
                             <div>
@@ -340,9 +376,9 @@
                         </div>
                     </div>
 
-                    <div class="xl_offset_1 l_offset_1 m_offset_1"></div>
+                    <div class="xl_offset_1 l_offset_1 m_hide"></div>
 
-                    <div class="col_xl_3 col_l_3 col_m_3">
+                    <div class="col_xl_3 col_l_3 col_m_6">
                         <div class="flex items-center gap-[22px] mb-[60px]">
                             <img src="img/racing-car.png" alt="">
 
@@ -353,7 +389,7 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-[22px] mb-[95px]">
+                        <div class="flex items-center gap-[22px] mb-[60px] md:mb-[95px]">
                             <img src="img/pocker-chip.png" alt="">
 
                             <div>
@@ -371,21 +407,21 @@
             </div>
         </section>
 
-        <section class="pt-[150px] pb-[50px]">
+        <section class="lg:pt-[150px] lg:pb-[50px] pt-10 pb-10">
             <div class="container">
                 <div class="row">
                     <div class="col_12">
                         <img src="img/rotated_red_square.svg" alt="" class="-mb-2">
 
-                        <h2 class="text-[64px] -mb-2">Distribution channels</h2>
+                        <h2 class="text-[32px] md:text-[64px] -mb-2">Distribution channels</h2>
 
-                        <p class="text-rad font_ubuntu font-normal text-2xl mb-6">Solutions for Clients</p>
+                        <p class="text-rad font_ubuntu font-normal text-lg md:text-2xl mb-6">Solutions for Clients</p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col_12">
-                        <div class="main_distribution_carousel owl-carousel mb-[185px]">
+                    <div class="col_12 px-0 md-[18px]">
+                        <div class="main_distribution_carousel owl-carousel mb-10 md:mb-20 lg:mb-[185px]">
                             <a href="channel.html" class="h-[420px] bg-white game_card my-5 mx-[18.5px] flex flex-col items-center justify-center px-6 pt-3 pb-12">
                                 <img src="img/racing-car.png" alt="" class="max-h-[110px] mb-4 !w-auto">
 
@@ -437,14 +473,14 @@
 
                         <img src="img/rotated_red_square.svg" alt="" class="-mb-2">
 
-                        <h2 class="text-[64px] -mb-2">how we work</h2>
+                        <h2 class="text-[32px] md:text-[64px] -mb-2">how we work</h2>
 
                         <p class="text-rad font_ubuntu font-normal text-2xl mb-12">Process</p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col_xl_3 col_l_3 col_m_3">
+                    <div class="col_xl_3 col_l_3 col_m_12 col_s_12">
                         <p class="font_ubuntu font-bold mb-3 text-[32px] text-rad">01</p>
 
                         <p class="font_ubuntu font-bold text-[26px] text-[#161413] mb-4">First Contact</p>
@@ -454,13 +490,13 @@
                         </p>
                     </div>
 
-                    <div class="col_xl_1 col_l_1 col_m_1">
-                        <div class="flex h-full items-center">
-                            <img src="img/big_arrow.svg" alt="">
+                    <div class="col_xl_1 col_l_1 col_m_12 col_s_12">
+                        <div class="flex lg:h-full items-center justify-center lg:justify-start my-10 lg:my-0 rotate-90	lg:rotate-0">
+                            <img src="img/big_arrow.svg" alt="" class="h-[30px] lg:h-auto">
                         </div>
                     </div>
 
-                    <div class="col_xl_3 col_l_3 col_m_3">
+                    <div class="col_xl_3 col_l_3 col_m_12 col_s_12">
                         <p class="font_ubuntu font-bold mb-3 text-[32px] text-rad">02</p>
 
                         <p class="font_ubuntu font-bold text-[26px] text-[#161413] mb-4">Installation And Test</p>
@@ -470,13 +506,13 @@
                         </p>
                     </div>
 
-                    <div class="col_xl_1 col_l_1 col_m_1">
-                        <div class="flex h-full items-center">
-                            <img src="img/big_arrow.svg" alt="">
+                    <div class="col_xl_1 col_l_1  col_m_12 col_s_12">
+                        <div class="flex lg:h-full items-center justify-center lg:justify-start my-10 lg:my-0 rotate-90	lg:rotate-0">
+                            <img src="img/big_arrow.svg" alt="" class="h-[30px] lg:h-auto">
                         </div>
                     </div>
 
-                    <div class="col_xl_3 col_l_3 col_m_3">
+                    <div class="col_xl_3 col_l_3 col_m_12 col_s_12">
                         <p class="font_ubuntu font-bold mb-3 text-[32px] text-rad">03</p>
 
                         <p class="font_ubuntu font-bold text-[26px] text-[#161413] mb-4">Work</p>
@@ -491,27 +527,27 @@
                     <div class="col_12">
                         <img src="img/rotated_red_square.svg" alt="" class="-mb-2 mt-[150px]">
 
-                        <h2 class="text-[64px] -mb-2">About</h2>
+                        <h2 class="text-[32px] md:text-[64px] -mb-2">About</h2>
 
                         <p class="text-rad font_ubuntu font-normal text-2xl mb-8">First class entertainment</p>
                     </div>
                 </div>
 
                 <div class="row z-10">
-                    <div class="col_xl_4 col_l_4 col_m_4">
+                    <div class="col_xl_4 col_l_4 m_hide col_s_12">
                         <img src="img/about.jpg" alt="">
                     </div>
 
-                    <div class="col_xl_4 col_l_4 col_m_4">
-                        <p class="mb-4 font_ubuntu text-xl font-bold">Our philosophi</p>
+                    <div class="col_xl_4 col_l_4 col_m_6">
+                        <p class="mb-4 font_ubuntu text-xl font-bold mt-10 md:mt-0">Our philosophi</p>
 
                         <p class="text-base font-normal leading-[27px]">
                             Andrej Machanets has a wide range of experience from various management positions in the gaming industry. Andrej has succesful build up a sports betting operator in Russia and as a Head of CIS country manager for a leading Austria based company. Andrej is educated at University of Kiev, School of International Business and Economics. Andrej is a fluent speaker of English, German, Russian, Ukrainian and Slovakian
                         </p>
                     </div>
 
-                    <div class="col_xl_4 col_l_4 col_m_4">
-                        <p class="mb-4 font_ubuntu text-xl font-bold">Who we are</p>
+                    <div class="col_xl_4 col_l_4 col_m_6">
+                        <p class="mb-4 font_ubuntu text-xl font-bold mt-10 md:mt-0">Who we are</p>
 
                         <p class="text-base font-normal leading-[27px]">
                             Andrej Machanets has a wide range of experience from various management positions in the gaming industry. Andrej has succesful build up a sports betting operator in Russia and as a Head of CIS country manager for a leading Austria based company. Andrej is educated at University of Kiev, School of International Business and Economics. Andrej is a fluent speaker of English, German, Russian, Ukrainian and Slovakian
@@ -519,10 +555,10 @@
                     </div>
                 </div>
 
-                <div class="row z-0">
-                    <div class="xl_offset_3 l_offset_3 m_offset_3"></div>
+                <div class="row z-0 md:mb-10 lg:mb-0">
+                    <div class="xl_offset_3 l_offset_3 m_hide s_hide"></div>
 
-                    <div class="col_xl_5 col_l_5 col_l_5">
+                    <div class="col_xl_5 col_l_5 m_hide s_hide">
                         <div class="bg-rad h-32 flex justify-end z-0 mt-[-50px] mb-10">
                             <div class="absolute bg-rad w-32 h-32 text-center text-white flex flex-col items-center justify-center font_ubuntu">
                                 <p class="text-7xl font-bold">25</p>
@@ -532,7 +568,7 @@
                         </div>
                     </div>
 
-                    <div class="col_xl_4 col_l_4 col_m_4">
+                    <div class="col_xl_4 col_l_4 m_hide s_hide">
                         <div class="flex justify-end">
                             <a href="about.html" class="arrow_btn"></a>
                         </div>
@@ -543,7 +579,7 @@
                     <div class="xl_offset_2 l_offset_1"></div>
 
                     <div class="col_xl_8 col_l_10 col_m_12">
-                        <div class="grid grid-cols-4 gap-[35px] items-stretch">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-[35px] items-stretch mt-10 md:mt-0">
                             <div class="bg-white flex-1 px-6 pt-6 pb-12 flex flex-col items-center justify-center">
                                 <p class="font_ubuntu text-rad font-bold text-[64px] text-center mb-4">12+</p>
 
@@ -579,21 +615,33 @@
                             <h6 class="text-center text-rad mb-6">Our Awards</h6>
 
                             <div class="awards_carousel owl-carousel">
-                                <img src="img/award_1.svg" alt="" class="grayscale">
-                                <img src="img/award_1.svg" alt="" class="grayscale">
-                                <img src="img/award_1.svg" alt="" class="grayscale">
-                                <img src="img/award_1.svg" alt="" class="grayscale">
-                                <img src="img/award_1.svg" alt="" class="grayscale">
-                                <img src="img/award_1.svg" alt="" class="grayscale">
+                                <div class="flex h-16 justify-center items-center">
+                                    <img src="img/award_1.svg" alt="" class="grayscale h-16">
+                                </div>
+
+                                <div class="flex h-16 justify-center items-center">
+                                    <img src="img/award_2.svg" alt="" class="grayscale h-16">
+                                </div>
+
+                                <div class="flex h-16 justify-center items-center">
+                                    <img src="img/award_3.svg" alt="" class="grayscale h-16">
+                                </div>
+
+                                <div class="flex h-16 justify-center items-center">
+                                    <img src="img/award_1.svg" alt="" class="grayscale h-16">
+                                </div>
+
+                                <div class="flex h-16 justify-center items-center">
+                                    <img src="img/award_2.svg" alt="" class="grayscale h-16">
+                                </div>
+
+                                <div class="flex h-16 justify-center items-center">
+                                    <img src="img/award_3.svg" alt="" class="grayscale h-16">
+                                </div>
+                 
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="xl_offse_1 l_offset_1"></div>
-
-                    <div class="col_xl_10 col_l_10 col_m_12"></div>
                 </div>
             </div>
         </section>
@@ -601,10 +649,10 @@
         <section class="pt-16 pb-[70px] bg-white">
             <div class="container">
                 <div class="row">
-                    <div class="col_xl_6 col_l_6 col_m_6">
+                    <div class="col_xl_6 col_l_6 col_m_12">
                         <img src="img/rotated_red_square.svg" alt="" class="-mb-2">
 
-                        <h2 class="text-[48px] -mb-2">Service</h2>
+                        <h2 class="text-[32px] md:text-[48px] -mb-2">Service</h2>
 
                         <div class="row">
                             <div class="col_xl_6 col_l_6 col_m_6">
@@ -629,10 +677,10 @@
                         </div>
                     </div>
     
-                    <div class="col_xl_6 col_l_6 col_m_6">
-                        <img src="img/rotated_red_square.svg" alt="" class="-mb-2">
+                    <div class="col_xl_6 col_l_6 col_m_12">
+                        <img src="img/rotated_red_square.svg" alt="" class="-mb-2 mt-10 md:mt-8 lg:mt-0">
 
-                        <h2 class="text-[48px] -mb-2">Support</h2>
+                        <h2 class="text-[32px] md:text-[48px] -mb-2">Support</h2>
 
                         <div class="row">
                             <div class="col_xl_6 col_l_6 col_m_6">
@@ -666,14 +714,14 @@
                     <div class="col_12">
                         <img src="img/rotated_red_square.svg" alt="" class="-mb-2">
 
-                        <h2 class="text-[64px] mb-[85px]">Our Partners</h2>
+                        <h2 class="text-[32px] md:text-[64px] mb-[85px]">Our Partners</h2>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col_xl_6 col_l_6 col_m_6"></div>
+                    <div class="col_xl_6 col_l_6 col_m_12"></div>
 
-                    <div class="col_xl_6 col_l_6 col_m_6">
+                    <div class="col_xl_6 col_l_6 col_m_12">
                         <div class="">
                             <h6 class="text-dark mb-2">Ukraine</h6>
 
@@ -692,12 +740,12 @@
                     <div class="col_12">
                         <img src="img/rotated_red_square.svg" alt="" class="-mb-2 mt-10">
 
-                        <h2 class="text-[64px] mb-[85px]">News</h2>
+                        <h2 class="text-[32px] md:text-[64px] md-6 md:mb-[85px]">News</h2>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col_xl_3 col_l_3 col_m_3">
+                    <div class="col_xl_3 col_l_3 col_m_6">
                         <div class="flex flex-col">
                             <a href="" class="flex flex-col gap-1">
                                 <div class="img_wrap h-[205px]">
@@ -718,12 +766,12 @@
 
                                 <p class="font_ubuntu text-xs font-normal text-dark opacity-60">30 MARCH 2022</p>
 
-                                <p class="font_ubuntu text-base font-bold text-[#121111]">TOGETHER WILL FEEL SO GOOD</p>
+                                <p class="font_ubuntu text-base font-bold text-[#121111] mb-[35px] md:mb-0">TOGETHER WILL FEEL SO GOOD</p>
                             </a>
                         </div>
                     </div>
 
-                    <div class="col_xl_3 col_l_3 col_m_3">
+                    <div class="col_xl_3 col_l_3 col_m_6">
                         <div class="flex flex-col">
                             <a href="" class="flex flex-col gap-1">
                                 <div class="img_wrap h-[205px]">
@@ -750,13 +798,13 @@
 
                     </div>
 
-                    <div class="col_xl_6 col_l_6 col_m_6">
+                    <div class="col_xl_6 col_l_6 col_m_12">
                         <a href="">
-                            <div href="" class="img_wrap mb-5 h-[426px]">
+                            <div href="" class="img_wrap mb-5 h-[426px] one_big_news">
                                 <img src="img/product_1.png" alt="">
                             </div>
 
-                            <p class="uppercase font_ubuntu text-2xl font-medium">
+                            <p class="uppercase font_ubuntu text-base md:text-2xl font-medium">
                                 NEUBAUER: “WE ARE ALWAYS CAREFULLY LISTENING TO OUR CLIENTS, AS WELL AS BEING AWARE OF MARKET DEMANDS AND COUNTRY REGULATIONS”
                             </p>
                         </a>
@@ -765,12 +813,12 @@
 
                 <div class="row">
                     <div class="col_12">
-                        <h2 class="mt-[100px] text-center font_ubuntu text-[#121111] font-bold text-[64px] mb-10">feedback</h2>
+                        <h2 class="mt-[100px] text-center font_ubuntu text-[#121111] font-bold text-[32px] md:text-[64px] mb-10">feedback</h2>
                     </div>
                 </div>
 
                 <div class="row pb-[150px]">
-                    <div class="col_xl_4 col_l_4 col_m_4">
+                    <div class="col_xl_4 col_l_4 m_hide s_hide">
                         <div class="bg-white game_card h-full px-5 pt-10 pb-[120px]">
                             <div class="flex justify-center mb-7">
                                 <img src="img/testimonails_icon.svg" alt="">
@@ -781,7 +829,7 @@
                                 Moreover, the catalogue contains such “exotic” solutions as, for example, bets on dog and drone racing.
                             </p>
 
-                            <div class="absolute -bottom-[55px] left-0 right-0 flex flex-col items-center justify-center">
+                            <div class="lg:absolute lg:-bottom-[55px] left-0 right-0 flex flex-col items-center justify-center md:relative md:bottom-0">
                                 <div class="flex items-center justify-center gap-2 mb-4">
                                     <img src="img/star_icon.svg" alt="">
                                     <img src="img/star_icon.svg" alt="">
@@ -799,7 +847,7 @@
                         </div>
                     </div>
 
-                    <div class="col_xl_3 col_l_3 col_m_3">
+                    <div class="col_xl_3 col_l_3 m_hide s_hide">
                         <div class="bg-white game_card h-full px-5 pt-10 pb-[120px]">
                             <div class="flex justify-center mb-7">
                                 <img src="img/testimonails_icon.svg" alt="">
@@ -810,7 +858,7 @@
                                 Moreover, the catalogue contains such “exotic” solutions as, for example, bets on dog and drone racing.
                             </p>
 
-                            <div class="absolute -bottom-[55px] left-0 right-0 flex flex-col items-center justify-center">
+                            <div class="lg:absolute lg:-bottom-[55px] left-0 right-0 flex flex-col items-center justify-center md:relative md:bottom-0">
                                 <div class="flex items-center justify-center gap-2 mb-4">
                                     <img src="img/star_icon.svg" alt="">
                                     <img src="img/star_icon.svg" alt="">
@@ -828,10 +876,10 @@
                         </div>
                     </div>
 
-                    <div class="col_xl_5 col_l_5 col_m_5">
+                    <div class="col_xl_5 col_l_5 col_m_12 col_s_12">
                         <div class="bg-white game_card h-full absolute top-0 left-0 right-0 bottom-0 z-0"></div>
 
-                        <div class="testimonials_carousel owl-carousel px-[105px] h-full">
+                        <div class="testimonials_carousel owl-carousel px-8 md:px-[105px] h-full">
                             <div class="pt-10">
                                 <div class="flex justify-center mb-7">
                                     <img src="img/testimonails_icon.svg" alt="" class="!w-[59px]">
@@ -890,7 +938,7 @@
     </main>
 
     <footer class="pt-8 pb-10">
-        <div class="absolute bg-rad w-32 h-32 text-center text-white flex flex-col items-center justify-center font_ubuntu footer_year">
+        <div class="m_hide absolute bg-rad w-32 h-32 text-center text-white flex flex-col items-center justify-center font_ubuntu footer_year">
             <p class="text-7xl font-bold">25</p>
             <p class="text-2xl font-bold uppercase leading-4">Years</p>
             <p class="text-base	font-black opacity-70 uppercase">Expiriens</p>
@@ -898,19 +946,19 @@
 
         <div class="container">
             <div class="row">
-                <div class="col_xl_3 col_l_4 col_m_4">
+                <div class="col_xl_3 col_l_4 col_m_12 col_s_12">
                     <h6 class="text-white mb-3 font_ubuntu">About Mohio</h6>
 
-                    <p class="text-white opacity-60 text-base font-light">
+                    <p class="text-white opacity-60 text-base font-light footer_about">
                         MOHIO is an Austrian based premier software content supplier founded by Andrej Machanets and Andreas Neubauer. We provide highly reliable, maximum profitable betting and gaming solutions to the industry's leading lottery, sports betting & casino operators.
 
                         We are the most trusted partner within gaming and sports betting, regulated and licensed across the globe with certification from the industries leading gaming laboratories.
                     </p>
                 </div>
 
-                <div class="xl_offset_1 l_offset_1 m_offset_1"></div>
+                <div class="xl_offset_1 l_offset_1 m_hide"></div>
 
-                <div class="col_xl_1 col_l_1 col_m_1">
+                <div class="col_xl_1 col_l_1 col_m_2 s_hide">
                     <h6 class="text-white mb-3 font_ubuntu">Menu</h6>
 
                     <a href="about.html" class="mb-1 block text-white text-base font-normal opacity-70 hover:opacity-100">About us</a>
@@ -920,9 +968,9 @@
                     <a href="contant.html" class="block text-white text-base font-normal opacity-70 hover:opacity-100">Contact</a>
                 </div>
 
-                <div class="xl_offset_1 l_offset_1 m_offset_1"></div>
+                <div class="xl_offset_1 l_offset_1 m_hide"></div>
 
-                <div class="col_xl_2 col_l_2">
+                <div class="col_xl_2 col_l_2 col_m_5 col_s_12">
                     <h6 class="text-white mb-3 font_ubuntu">Main Office</h6>
 
                     <p class="text-white font-light text-xs">phone:</p>
@@ -938,7 +986,7 @@
                     <a href="mailto:offer@mohiogaming.com" class="block text-white font-normal text-xl mb-6 opacity-70 hover:opacity-100">offer@mohiogaming.com</a>
                 </div>
 
-                <div class="col_xl_2 col_l_2">
+                <div class="col_xl_2 col_l_2 col_m_5 col_s_12">
                     <h6 class="text-white mb-3 font_ubuntu">Back Office</h6>
 
                     <p class="text-white font-light text-xs">phone:</p>
@@ -980,23 +1028,23 @@
             </div>
 
             <div class="row">
-                <div class="col_xl_3 col_l_3 col_m_3">
+                <div class="col_xl_3 col_l_3 col_m_6 col_s_12">
                     <h6 class="text-white mb-4 font_ubuntu">Join our newsletter:</h6>
 
-                    <div class="flex items-stretch">
-                        <input type="email" class="h-10 py-2 px-4 text-white font-light text-sm border-t-1 border-b-1 border-l-1 bg-transparent footer_input_border" placeholder="Enter your email address">
+                    <div class="flex items-stretch w-full">
+                        <input type="email" class="h-10 py-2 px-4 text-white font-light text-sm border-t-1 border-b-1 border-l-1 bg-transparent footer_input_border flex-1" placeholder="Enter your email address">
 
                         <button class="bg-rad text-white uppercase flex items-center justify-center w-[84px] text-base font-semibold call_modal" data-modal="error">Send</button>
                     </div>
                 </div>
 
-                <div class="xl_offset_3 l_offset_3 m_offset_3"></div>
+                <div class="xl_offset_3 l_offset_3 m_hide"></div>
 
-                <div class="col_xl_3 col_l_3 col_m_3">
-                    <h6 class="text-white mb-4 font_ubuntu">Feedback request:</h6>
+                <div class="col_xl_3 col_l_3 col_m_6 col_s_12">
+                    <h6 class="text-white mb-4 font_ubuntu mt-10 md:mt-0">Feedback request:</h6>
 
-                    <div class="flex items-stretch">
-                        <input type="email" class="h-10 py-2 px-4 text-white font-light text-sm border-t-1 border-b-1 border-l-1 bg-transparent footer_input_border" placeholder="Enter your email address">
+                    <div class="flex items-stretch w-full">
+                        <input type="email" class="h-10 py-2 px-4 text-white font-light text-sm border-t-1 border-b-1 border-l-1 bg-transparent footer_input_border flex-1" placeholder="Enter your email address">
 
                         <button class="bg-rad text-white uppercase flex items-center justify-center w-[84px] text-base font-semibold call_modal" data-modal="succes">Send</button>
                     </div>
@@ -1010,7 +1058,7 @@
             </div>
 
             <div class="row">
-                <div class="col_12">
+                <div class="col_12 s_hide">
                     <h6 class="text-white mb-3 font_ubuntu">Games</h6>
 
                     <div class="flex justify-between items-center mb-[104px]">
@@ -1044,7 +1092,7 @@
                             </div>
                         </div>
 
-                        <div class="flex gap-4">
+                        <div class="flex gap-4 m_hide">
                             <img src="img/racing-car.png" alt="">
 
                             <div>
@@ -1054,7 +1102,7 @@
                             </div>
                         </div>
 
-                        <div class="flex gap-4">
+                        <div class="flex gap-4 m_hide">
                             <img src="img/racing-car.png" alt="">
 
                             <div>
@@ -1068,7 +1116,7 @@
             </div>
 
             <div class="row">
-                <div class="col_xl_2 col_l_2 col_m_2">
+                <div class="col_xl_2 col_l_2 col_m_4 col_s_12">
                     <h6 class="text-white mb-3 font_ubuntu">Service & Support</h6>
 
                     <a href="" class="block text-base font-light text-white opacity-70 hover:opacity-100 mb-2">technical functioning</a>
@@ -1078,8 +1126,8 @@
                     <a href="" class="block text-base font-light text-white opacity-70 hover:opacity-100">maintenance</a>
                 </div>
 
-                <div class="col_xl_2 col_l_2 col_m_2">
-                    <h6 class="text-white mb-3 font_ubuntu">Distribution</h6>
+                <div class="col_xl_2 col_l_2 col_m_4 col_s_12">
+                    <h6 class="text-white mb-3 font_ubuntu mt-10 md:mt-0">Distribution</h6>
 
                     <a href="" class="block text-base font-light text-white opacity-70 hover:opacity-100 mb-2">retail batting shop</a>
 
@@ -1090,9 +1138,9 @@
                     <a href="" class="block text-base font-light text-white opacity-70 hover:opacity-100">terminal shop</a>
                 </div>
 
-                <div class="xl_offset_1 l_offset_1 m_offset_1"></div>
+                <div class="xl_offset_1 l_offset_1 m_hide s_hide"></div>
 
-                <div class="col_xl_7 col_l_7 col_m_7">
+                <div class="col_xl_7 col_l_7 col_m_4 s_hide">
                     <h6 class="text-white mb-3 font_ubuntu">Cetificate</h6>
                 </div>
             </div>
@@ -1104,16 +1152,16 @@
             </div>
 
             <div class="row">
-                <div class="col_xl_4 col_l_4 col_m_4">
-                    <p class="text-base font-light text-white opacity-50">© 2020 mohiogaming All rights reserved</p>
+                <div class="col_xl_4 col_l_4 col_m_12">
+                    <p class="text-xs md:text-base font-light text-white opacity-50 text-center mb-4 lg:mb-0 lg:text-left">© 2020 mohiogaming All rights reserved</p>
                 </div>
 
-                <div class="col_xl_4 col_l_4 col_m_4">
-                    <p class="text-base font-light text-white opacity-50 text-center">The Best of Cutting Edge Technologies for The Betting Shops </p>
+                <div class="col_xl_4 col_l_4 col_m_12">
+                    <p class="text-xs md:text-base font-light text-white opacity-50 text-center whitespace-nowrap mb-4 lg:mb-0">The Best of Cutting Edge Technologies for The Betting Shops </p>
                 </div>
 
-                <div class="col_xl_4 col_l_4 col_m_4">
-                    <div class="flex h-full items-center justify-end">
+                <div class="col_xl_4 col_l_4 col_m_12">
+                    <div class="flex h-full items-center lg:justify-end justify-center">
                         <a href="https://ukiepro.com/" target="_blank">
                             <img src="img/ukie_logo.svg" alt="">
                         </a>
@@ -1123,8 +1171,8 @@
         </div>
     </footer>
 
-    <div class="modal_overlay fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center hidden">
-        <div class="bg-white game_card px-10 pt-8 pb-24 min-w-[490px] modal hidden" data-id="error">
+    <div class="modal_overlay fixed top-0 bottom-0 left-0 right-0 items-center justify-center flex hidden">
+        <div class="bg-white game_card px-10 pt-8 pb-24 md:min-w-[490px] modal hidden" data-id="error">
             <img src="img/modal_logo.svg" alt="">
 
             <button class="absolute z-10 top-10 right-10 w-5 h-5 close">
@@ -1140,7 +1188,7 @@
             <button class="btn orange w-[225px] mx-auto close">Go back</button>
         </div>
 
-        <div class="bg-white game_card px-10 pt-8 pb-24 min-w-[490px] modal hidden" data-id="succes">
+        <div class="bg-white game_card px-10 pt-8 pb-24 md:min-w-[490px] modal hidden" data-id="succes">
             <img src="img/modal_logo.svg" alt="">
 
             <button class="absolute z-10 top-10 right-10 w-5 h-5 close">

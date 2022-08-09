@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  $(".show_mob_nav").click(function () {
+    $(this).toggleClass("active");
+    $(".mob_nav").toggleClass("active");
+  });
+
   $(".products").click(function () {
     $(this).toggleClass("active");
     $(".main_mav").toggleClass("active");
@@ -7,37 +12,93 @@ $(document).ready(function () {
 
   if ($(".main_top_games_carousel")) {
     $(".main_top_games_carousel.owl-carousel").owlCarousel({
-      items: 4,
       loop: true,
       autoplay: true,
+
+      responsive: {
+        0: {
+          items: 1.2,
+        },
+        760: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        },
+        1360: {
+          items: 4,
+        },
+      },
     });
   }
 
   if ($(".more_games_carousel")) {
     $(".more_games_carousel.owl-carousel").owlCarousel({
-      items: 4,
       loop: true,
-      autoplay: true,
-      margin: 40,
+      // autoplay: true,
+
+      responsive: {
+        0: {
+          items: 1.2,
+          margin: 20,
+        },
+        760: {
+          items: 2,
+          margin: 40,
+        },
+        1000: {
+          items: 3,
+          margin: 40,
+        },
+        1400: {
+          items: 4,
+          margin: 40,
+        },
+      },
     });
   }
 
   if ($(".main_distribution_carousel")) {
     $(".main_distribution_carousel.owl-carousel").owlCarousel({
-      items: 4,
       loop: true,
       autoplay: true,
+
+      responsive: {
+        0: {
+          items: 1.2,
+        },
+        760: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        },
+        1360: {
+          items: 4,
+        },
+      },
     });
   }
 
   if ($(".awards_carousel")) {
     $(".awards_carousel.owl-carousel").owlCarousel({
-      margin: 50,
-      items: 6,
       loop: true,
       autoplay: true,
       nav: true,
       navText: ["", ""],
+
+      responsive: {
+        0: {
+          items: 1,
+        },
+        760: {
+          items: 4,
+          margin: 50,
+        },
+        1000: {
+          items: 6,
+        },
+      },
     });
   }
 
@@ -50,6 +111,20 @@ $(document).ready(function () {
       navText: ["", ""],
     });
   }
+
+  if ($(".game_img_carousel")) {
+    $(".owl-carousel.game_img_carousel").owlCarousel({
+      items: 1.2,
+      loop: true,
+      autoplay: true,
+      margin: 10,
+    });
+  }
+
+  $(".show_mob_drop").click(function (e) {
+    e.stopPropagation();
+    $(".show_mob_drop_list").toggleClass("hidden");
+  });
 
   $(".games_table .table-cell").mouseenter(function () {
     let id = $(this).attr("data-num");

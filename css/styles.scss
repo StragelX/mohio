@@ -1,8 +1,6 @@
 @import "./basic.scss";
 @import "_grid.scss";
 @import "./owl.carousel.scss";
-// @import "../fonts/segoeui/stylesheet.css";
-// @import "../fonts/ubuntu/stylesheet.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,7 +30,7 @@ $grey: #f0f0f0;
 }
 
 .font_ubuntu {
-  font-family: Ubuntu;
+  font-family: "Ubuntu";
 }
 
 .color_b2 {
@@ -97,6 +95,18 @@ footer {
   text-transform: uppercase;
   transition: background-color 180ms, color 180ms;
 
+  &.w-full {
+    @media all and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+  }
+
   &.orange {
     background-color: $rad;
     border:1px solid $rad;
@@ -147,7 +157,7 @@ footer {
 
 h1,h2,h4,h5,h5,h6 {
   color: $dark;
-  font-family: Ubuntu;
+  font-family: "Ubuntu";
   font-weight: 700;
 }
 
@@ -196,6 +206,14 @@ h6 {
 .footer_year {
   right: 285px;
   top: -64px;
+
+  @media all and (max-width: 1700px) {
+    right: 100px;
+  }
+
+  @media all and (max-width: 1400px) {
+    right: 50px;
+  }
 }
 
 .divider {
@@ -229,6 +247,17 @@ h6 {
 
 .products_section {
   background: url("../img/products_bg.jpg") no-repeat center / cover;
+
+  @media all and (max-width: 1370px) {
+    padding-top: 5vh !important;
+    padding-bottom: 5vh !important;
+  }
+
+  @media all and (max-width: 767px) {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+  
 }
 
 .breadcrumbs_divider {
@@ -259,8 +288,12 @@ h6 {
 .text-section {
   h1, h2, h3, h4, h5, h6 {
     color: $dark;
-    font-family: Ubuntu;
+    font-family: "Ubuntu";
     margin-bottom: 24px;
+
+    @media all and (max-width: 767px) {
+      font-size: 22px;
+    }
   }
 
   p {
@@ -268,6 +301,10 @@ h6 {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 32px;
+
+    @media all and (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 
   ul {
@@ -276,6 +313,10 @@ h6 {
 
     li {
       font-size: 16px;
+
+      @media all and (max-width: 767px) {
+        font-size: 14px;
+      }
 
       p {
         margin-bottom: 8px;
@@ -394,9 +435,21 @@ h6 {
   height: calc(100vh - 75px);
 }
 
+.section_404 {
+  @media all and (max-width: 1024px) {
+    height: auto;
+    min-height: 600px;
+  }
+
+  @media all and (max-width: 767px) {
+    min-height: 330px;
+  }
+}
+
 .main_mav {
-  transform: translateY(-100%);
+  transform: translateY(-150%);
   transition: transform 180ms;
+
 
   &.active {
     transform: translateY(0);
@@ -453,6 +506,15 @@ h6 {
     margin-left: -15%;
     display: flex !important;
 
+    @media all and (max-width: 1050px) {
+      width: 120%;
+      margin-left: -10%;
+    }
+
+    @media all and (max-width: 767px) {
+      display: none !important;
+    }
+
     .owl-prev, .owl-next {
       &::before {
         width: 23px;
@@ -466,6 +528,10 @@ h6 {
   .owl-nav {
     height: 100%;
 
+    @media all and (max-width: 767px) {
+      display: none !important;
+    }
+
     .owl-prev, .owl-next {
       height: 100%;
       padding-left: 25px;
@@ -476,6 +542,10 @@ h6 {
 
 .main_top_games_carousel {
   margin-left: -15px;
+
+  @media all and (max-width: 767px) {
+    margin-left: 0;
+  }
 }
 
 .style_input {
@@ -491,7 +561,6 @@ h6 {
 .mfp-with-zoom.mfp-bg {
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
-	/* ideally, transition speed should match zoom duration */
 	-webkit-transition: all 0.3s ease-out; 
 	-moz-transition: all 0.3s ease-out; 
 	-o-transition: all 0.3s ease-out; 
@@ -510,3 +579,48 @@ h6 {
 	opacity: 0;
 }
 // regio end
+
+.top_nav {
+  @media all and (max-width: 1441px) {
+    padding-right: 6rem;
+  }
+}
+
+.footer_about {
+  @media all and (max-width: 1025px) {
+    margin-bottom: 50px;
+  }
+}
+
+.one_big_news {
+  @media all and (max-width: 1025px) {
+    margin-top: 16px;
+  }
+}
+
+.show_mob_nav {
+  &.active {
+    .hidden {
+      display: block;
+    }
+
+    .shown {
+      display: none;
+    }
+  }
+}
+
+.mob_nav {
+  background-color: rgba(0, 0, 0, 0.50);
+  transform: translateX(-100%);
+  transition: transform 180ms;
+
+  &.active {
+    transform: translateX(0);
+    transition: transform 180ms;
+  }
+}
+
+.mob_inner_menu {
+  height: calc(100vh - 75px);
+}

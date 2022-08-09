@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/styles_tail.css">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <script src="js/scripts.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="css/styles_tail.css">
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/owl.autoplay.js"></script>
+        <script src="js/owl.navigation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        <script src="js/scripts.js"></script>
+    </head>
 
 <body>
     <header>
         <div class="container">
             <div class="row">
-                <div class="col_11 flex no_padding_right">
-                    <nav class="flex items-center justify-between w-full pr-4">
+                <div class="col_xl_11 col_l_10 flex no_padding_right px-0 lg:pl-[18px]">
+                    <nav class="flex items-center justify-between w-full pr-4 top_nav">
+                        <button class="h-[75px] px-3 flex items-center justify-center show_mob_nav l_hide xl_hide">
+                            <img src="img/burger_icon.svg" alt="" class="shown">
+
+                            <img src="img/burger_cros_icon.svg" alt="" class="hidden">
+                        </button>
+
                         <div class="flex items-center h-full">
                             <a href="index.html" class="flex-none">
-                                <img src="img/logo.svg" alt="">
+                                <img src="img/logo.svg" alt="" class="h-8 md:h-auto">
                             </a>
                         </div>
 
-                        <div class="flex h-full items-stretch">
+                        <div class="lg:flex lg:h-full lg:items-stretch top_nav s_hide m_hide">
                             <a href="about.html" class="px-4 text-lg text-white flex items-center hover:text-rad">About us</a>
                             <a href="cooperat.html" class="px-4 text-lg text-white flex items-center hover:text-rad">Cooperation</a>
                             <a href="news.html" class="px-4 text-lg text-white flex items-center hover:text-rad">News</a>
@@ -38,68 +46,98 @@
             </div>
         </div>
 
-        <div class="flex-none h-full cursor-pointer flex items-center gap-4 pl-6 pr-8 products text-white absolute right-0 top-0 bg-rad">
-            <img src="img/logo_compact.svg" alt="">
+        <div class="flex-none h-full cursor-pointer flex items-center px-2 gap-2 md:gap-4 md:pl-6 md:pr-8 products text-white absolute right-0 top-0 bg-rad">
+            <img src="img/logo_compact.svg" alt="" class="w-7 md:w-auto">
 
-            <span class="capitalize cursor-pointer">Products</span>
+            <span class="cursor-pointer uppercase text-base md:text-[23px]">Products</span>
 
             <img src="img/down_arrow_icon.svg" alt="">
         </div>
     </header>
 
-    <nav class="absolute main_mav top-[75px] w-full bg-grey z-50 flex flex-col">
-        <section class="pt-28 pb-24 products_section">
+    <nav class="mob_nav l_hide xl_hide fixed top-[75px] bottom-0 left-0 right-0 z-[100] h-screen">
+        <div class="mob_inner_menu bg-dark px-4 py-4 w-56 flex flex-col">
+            <a href="about.html" class="text-lg text-white block py-3">About us</a>
+            <a href="cooperat.html" class="text-lg text-white block py-3">Cooperation</a>
+            <a href="news.html" class="text-lg text-white block py-3">News</a>
+            <a href="career.html" class="text-lg text-white block py-3">Career</a>
+            <a href="contant.html" class="text-lg text-white block py-3">Contact</a>
+            <a href="games.html" class="text-lg text-white block py-3">Games</a>
+            <a href="services.html" class="text-lg text-white block py-3">Service & Support</a>
+            <a href="distribution_channels.html" class="text-lg text-white block py-3">Distribution</a>
+
+            <div class="flex-1 flex flex-col justify-end opacity-70">
+                <p class="text-white opacity-70 text-xs font-light">phone:</p>
+                <a href="tel:+43 732 918990" class="text-white text-base font-normal mb-3">+43 732 918990</a>
+
+                <p class="text-white opacity-70 text-xs font-light">E-mail:</p>
+                <a href="mailto:offer@mohiogaming.com" class="text-white text-base font-normal mb-3">offer@mohiogaming.com</a>
+
+                <div class="flex items-center justify-between mb-4">
+                    <a href=""><img src="img/is_icon.svg" alt=""></a>
+                    <a href=""><img src="img/fb_icon.svg" alt=""></a>
+                    <a href=""><img src="img/yt_icon.svg" alt=""></a>
+                    <a href=""><img src="img/tw_icon.svg" alt=""></a>
+                </div>
+
+                <p class="text-white opacity-50 text-xs font-light">The Best of Cutting Edge Technologies for The Betting Shops</p>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="fixed overflow-hidden main_mav top-[75px] w-full bg-grey z-50 flex flex-col">
+        <section class="xl:py-[11vh] products_section">
             <div class="container">
                 <div class="row">
                     <div class="col_xl_10 xl_offset_1 col_l_10 l_offset_1 col_m_12 col_s_12">
-                        <p class="font_ubuntu text-dark font-bold text-[32px] mb-6">Gaming Platform</p>
+                        <p class="font_ubuntu text-dark font-bold text-[24px] md:text-[32px] mb-3 md:mb-6">Gaming Platform</p>
 
-                        <div class="grid grid-cols-3 grid-rows-2">
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-rows-2">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
                             </a>
 
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
                             </a>
 
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
                             </a>
 
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
                             </a>
 
-                            <a href="game.html" class="flex items-center gap-11 mb-6">
-                                <img src="img/racing-car.png" alt="">
+                            <a href="game.html" class="flex items-center gap-4 md:gap-11 mb-3 md:mb-6">
+                                <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
     
                                 <div>
-                                    <h6 class="mb-2">Lotteries</h6>
+                                    <p class="md:mb-2 text-dark font_ubuntu font-bold text-base	md:text-2xl">Lotteries</p>
                                     
                                     <p class="text-base font-normal text-[#333]">Live Sports, Pre Match Sports</p>
                                 </div>
@@ -112,27 +150,27 @@
             </div>
         </section>
 
-        <section class="bg-dark flex-1 pt-10">
+        <section class="bg-dark flex-1 pt-4 lg:pt-10">
             <div class="container">
                 <div class="row">
-                    <div class="col_xl_2 col_l_2 col_m_6">
-                        <p class="text-white font_ubuntu text-xl font-bold mb-3">Service & Support</p>
+                    <div class="col_xl_2 col_l_2 col_m_6 col_s_6">
+                        <p class="text-white font_ubuntu text-base md:text-xl font-bold mb-3">Service & Support</p>
 
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">technical functioning</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">improvement</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 block"></a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">technical functioning</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">improvement</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 block"></a>
                     </div>
 
-                    <div class="col_xl_4 col_l_4 col_m_6">
-                        <p class="text-white font_ubuntu text-xl font-bold mb-3">Distribution</p>
+                    <div class="col_xl_2 col_l_2 col_m_6 col_s_6">
+                        <p class="text-white font_ubuntu text-base md:text-xl font-bold mb-3">Distribution</p>
 
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">retail batting shop</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">self-service terminal shop</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">online solution</a>
-                        <a href="" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">terminal shop</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">retail batting shop</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">self-service terminal shop</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">online solution</a>
+                        <a href="" class="text-white text-sm md:text-xl font-normal opacity-70 hover:opacity-100 mb-2 block">terminal shop</a>
                     </div>
 
-                    <div class="col_xl_2 col_l_2 col_m_6">
+                    <div class="col_xl_2 col_l_3 m_hide s_hide">
                         <p class="text-white font_ubuntu text-xl font-bold mb-1">Main Office</p>
 
                         <p class="text-white text-xs font-light">phone:</p>
@@ -145,7 +183,7 @@
                         <a href="mailto:offer@mohiogaming.com" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-3 block">offer@mohiogaming.com</a>
                     </div>
 
-                    <div class="col_xl_2 col_l_2 col_m_6">
+                    <div class="col_xl_3 col_l_3 m_hide s_hide">
                         <p class="text-white font_ubuntu text-xl font-bold mb-1">Back Office</p>
 
                         <p class="text-white text-xs font-light">phone:</p>
@@ -158,13 +196,13 @@
                         <a href="mailto:offer@mohiogaming.com" class="text-white text-xl font-normal opacity-70 hover:opacity-100 mb-3 block">offer@mohiogaming.com</a>
                     </div>
 
-                    <div class="col_xl_2 col_l_2 col_m_6">
+                    <div class="col_xl_2 col_l_2 m_hide s_hide">
                         <img src="img/big_menu_logo_compact.png" alt="" class="w-48">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col_12">
+                    <div class="col_12 s_hide">
                         <div class="mt-12 border-t-1 border-t-[#262626] pt-4 flex justify-between items-center">
                             <div class="flex items-center gap-4">
                                 <a href="" class="block h-full opacity-70 hover:opacity-100">
@@ -184,7 +222,7 @@
                                 </a>
                             </div>
 
-                            <p class="text-white text-base font-light opacity-70">The Best of Cutting Edge Technologies for The Betting Shops </p>
+                            <p class="text-white text-base font-light opacity-70">The Best of Cutting Edge Technologies for The Betting Shops</p>
 
                             <p class="text-white text-base font-light opacity-70">© 2020 mohiogaming All rights reserved</p>
                         </div>
@@ -214,21 +252,21 @@
             </div>
         </section>
 
-        <section class="mb-12">
+        <section class="mb-12 overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col_12">
                         <img src="img/rotated_red_square.svg" alt="" class="-mb-2">
 
-                        <h1>Games</h1>
+                        <h1 class="text-[32px] md:text-[64px]">Games</h1>
 
-                        <p class="text-rad font_ubuntu font-normal text-2xl mb-6">First class entertainment</p>
+                        <p class="text-rad font_ubuntu font-normal text-lg md:text-2xl mb-6">First class entertainment</p>
                     </div>
                 </div>
 
                 <div class="row">
-                   <div class="col_xl_3 col_l_3 col_m_4">
-                    <div class="bg-white game_card py-8 px-4 mb-5">
+                   <div class="col_xl_3 col_l_3 col_m_12 col_s_12">
+                    <div class="bg-white game_card py-8 px-4 mb-5 s_hide">
                         <p class="font_ubuntu font-bold text-dark text-[28px]">Fillter</p>
 
                         <div class="flex flex-col gap-2">
@@ -249,124 +287,132 @@
                         </div>
                     </div>
 
-                    <div class="bg-white game_card py-8">
-                        <p class="mb-4 font_ubuntu text-dark font-bold text-[28px] px-4">Games</p>
+                    <div class="bg-white game_card py-6 md:py-8 flex flex-wrap md:block justify-between cursor-pointer md:cursor-default show_mob_drop">
+                        <p class="lg:mb-4 font_ubuntu text-dark font-bold text-[28px] px-4">Games</p>
 
-                        <button class="game_item flex items-center px-4 py-1 justify-between w-full">
-                            <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
+                        <img src="img/black_arrow_down.svg" alt="" class="mr-7">
 
-                            <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
-
-                            <div class="arrow flex-none w-3 h-3 ml-2"></div>
-                        </button>
-
-                        <button class="game_item flex items-center px-4 py-1 justify-between w-full">
-                            <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
-
-                            <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
-
-                            <div class="arrow flex-none w-3 h-3 ml-2"></div>
-                        </button>
-
-                        <button class="game_item flex items-center px-4 py-1 justify-between w-full active">
-                            <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
-
-                            <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
-
-                            <div class="arrow flex-none w-3 h-3 ml-2"></div>
-                        </button>
-
-                        <button class="game_item flex items-center px-4 py-1 justify-between w-full">
-                            <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
-
-                            <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
-
-                            <div class="arrow flex-none w-3 h-3 ml-2"></div>
-                        </button>
-
-                        <button class="game_item flex items-center px-4 py-1 justify-between w-full">
-                            <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
-
-                            <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
-
-                            <div class="arrow flex-none w-3 h-3 ml-2"></div>
-                        </button>
+                        <div class="bg-white absolute w-full z-10 top-[90px] hidden show_mob_drop_list">
+                            <a href="game.html" class="game_item flex items-center px-4 py-1 justify-between w-full">
+                                <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
+    
+                                <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
+    
+                                <div class="arrow flex-none w-3 h-3 ml-2"></div>
+                            </a>
+    
+                            <a href="game.html" class="game_item flex items-center px-4 py-1 justify-between w-full">
+                                <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
+    
+                                <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
+    
+                                <div class="arrow flex-none w-3 h-3 ml-2"></div>
+                            </a>
+    
+                            <a href="game.html" class="game_item flex items-center px-4 py-1 justify-between w-full active">
+                                <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
+    
+                                <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
+    
+                                <div class="arrow flex-none w-3 h-3 ml-2"></div>
+                            </a>
+    
+                            <a href="game.html" class="game_item flex items-center px-4 py-1 justify-between w-full">
+                                <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
+    
+                                <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
+    
+                                <div class="arrow flex-none w-3 h-3 ml-2"></div>
+                            </a>
+    
+                            <a href="game.html" class="game_item flex items-center px-4 py-1 justify-between w-full">
+                                <img src="img/racing-car.png" alt="" class="h-16 mr-2 flex-none">
+    
+                                <p class="font_ubuntu text-dark font-bold text-[22px] cursor-pointer">Lotteries</p>
+    
+                                <div class="arrow flex-none w-3 h-3 ml-2"></div>
+                            </a>
+                        </div>
                     </div>
                    </div>
 
-                   <div class="col_xl_9 col_l_9 col_m_8">
+                   <div class="col_xl_9 col_l_9 col_m_12 col_s_12">
                         <div class="pt-3">
                             <h2 class="text-black font_ubuntu font-bold mb-6 text-[36px]">Lotteries</h2>
 
-                            <div class="flex flex-col gap-[72px] mb-20">
-                                <a href="game.html" class="lucky_six p-6 min-h-[340px]">
-                                    <h3 class="mb-9 text-white font-bold">LUCKY SIX</h3>
+                            <div class="flex flex-col gap-[72px] mb-20 pt-16 lg:pt-0">
+                                <a href="game.html" class="lucky_six p-6 min-h-[340px] flex flex-col lg:block">
+                                    <div class="order-2 lg:order-1">
+                                        <h3 class="mb-9 text-white font-bold">LUCKY SIX</h3>
     
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="text-white opacity-80 text-base mt-6 max-w-[50%]">
+                                            <strong>Distribution Channels:</strong> Shop TV  Self service terminal  Video lottery terminal
+                                        </p>
+                                    </div>
     
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
-    
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
-    
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
-    
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
-    
-                                    <p class="text-white opacity-80 text-base mt-6 max-w-[50%]">
-                                        <strong>Distribution Channels:</strong> Shop TV  Self service terminal  Video lottery terminal
-                                    </p>
-    
-                                    <img src="img/lotrery_bals.png" alt="" class="absolute right-[-75px] top-[-20px]">
+                                    <img src="img/lotrery_bals.png" alt="" class="mt-[-40px] lg:mt-0 w-full lg:w-auto order-1 lg:order-2 lg:absolute lg:right-[-75px] lg:top-[-20px]">
                                 </a>
 
-                                <a href="game.html" class="lucky_six p-6 min-h-[340px]">
-                                    <h3 class="mb-9 text-white font-bold">LUCKY SIX</h3>
+                                <a href="game.html" class="lucky_six p-6 min-h-[340px] flex flex-col lg:block">
+                                    <div class="order-2 lg:order-1">
+                                        <h3 class="mb-9 text-white font-bold">LUCKY SIX</h3>
     
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
+                                            <img src="img/white_checkbox.svg" alt="">
+                                            Lucky Six is fast-paced entertainment
+                                        </p>
+        
+                                        <p class="text-white opacity-80 text-base mt-6 max-w-[50%]">
+                                            <strong>Distribution Channels:</strong> Shop TV  Self service terminal  Video lottery terminal
+                                        </p>
+                                    </div>
     
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
-    
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
-    
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
-    
-                                    <p class="flex items-center gap-1 text-white font_ubuntu text-base font-medium">
-                                        <img src="img/white_checkbox.svg" alt="">
-                                        Lucky Six is fast-paced entertainment
-                                    </p>
-    
-                                    <p class="text-white opacity-80 text-base mt-6 max-w-[50%]">
-                                        <strong>Distribution Channels:</strong> Shop TV  Self service terminal  Video lottery terminal
-                                    </p>
-    
-                                    <img src="img/lotrery_bals.png" alt="" class="absolute right-[-75px] top-[-20px]">
+                                    <img src="img/lotrery_bals.png" alt="" class="mt-[-40px] lg:mt-0 w-full lg:w-auto order-1 lg:order-2 lg:absolute lg:right-[-75px] lg:top-[-20px]">
                                 </a>
                             </div>
                         </div>
@@ -377,7 +423,7 @@
     </main>
 
     <footer class="pt-8 pb-10">
-        <div class="absolute bg-rad w-32 h-32 text-center text-white flex flex-col items-center justify-center font_ubuntu footer_year">
+        <div class="m_hide absolute bg-rad w-32 h-32 text-center text-white flex flex-col items-center justify-center font_ubuntu footer_year">
             <p class="text-7xl font-bold">25</p>
             <p class="text-2xl font-bold uppercase leading-4">Years</p>
             <p class="text-base	font-black opacity-70 uppercase">Expiriens</p>
@@ -385,19 +431,19 @@
 
         <div class="container">
             <div class="row">
-                <div class="col_xl_3 col_l_4 col_m_4">
+                <div class="col_xl_3 col_l_4 col_m_12 col_s_12">
                     <h6 class="text-white mb-3 font_ubuntu">About Mohio</h6>
 
-                    <p class="text-white opacity-60 text-base font-light">
+                    <p class="text-white opacity-60 text-base font-light footer_about">
                         MOHIO is an Austrian based premier software content supplier founded by Andrej Machanets and Andreas Neubauer. We provide highly reliable, maximum profitable betting and gaming solutions to the industry's leading lottery, sports betting & casino operators.
 
                         We are the most trusted partner within gaming and sports betting, regulated and licensed across the globe with certification from the industries leading gaming laboratories.
                     </p>
                 </div>
 
-                <div class="xl_offset_1 l_offset_1 m_offset_1"></div>
+                <div class="xl_offset_1 l_offset_1 m_hide"></div>
 
-                <div class="col_xl_1 col_l_1 col_m_1">
+                <div class="col_xl_1 col_l_1 col_m_2 s_hide">
                     <h6 class="text-white mb-3 font_ubuntu">Menu</h6>
 
                     <a href="about.html" class="mb-1 block text-white text-base font-normal opacity-70 hover:opacity-100">About us</a>
@@ -407,9 +453,9 @@
                     <a href="contant.html" class="block text-white text-base font-normal opacity-70 hover:opacity-100">Contact</a>
                 </div>
 
-                <div class="xl_offset_1 l_offset_1 m_offset_1"></div>
+                <div class="xl_offset_1 l_offset_1 m_hide"></div>
 
-                <div class="col_xl_2 col_l_2">
+                <div class="col_xl_2 col_l_2 col_m_5 col_s_12">
                     <h6 class="text-white mb-3 font_ubuntu">Main Office</h6>
 
                     <p class="text-white font-light text-xs">phone:</p>
@@ -425,7 +471,7 @@
                     <a href="mailto:offer@mohiogaming.com" class="block text-white font-normal text-xl mb-6 opacity-70 hover:opacity-100">offer@mohiogaming.com</a>
                 </div>
 
-                <div class="col_xl_2 col_l_2">
+                <div class="col_xl_2 col_l_2 col_m_5 col_s_12">
                     <h6 class="text-white mb-3 font_ubuntu">Back Office</h6>
 
                     <p class="text-white font-light text-xs">phone:</p>
@@ -467,25 +513,25 @@
             </div>
 
             <div class="row">
-                <div class="col_xl_3 col_l_3 col_m_3">
+                <div class="col_xl_3 col_l_3 col_m_6 col_s_12">
                     <h6 class="text-white mb-4 font_ubuntu">Join our newsletter:</h6>
 
-                    <div class="flex items-stretch">
-                        <input type="email" class="h-10 py-2 px-4 text-white font-light text-sm border-t-1 border-b-1 border-l-1 bg-transparent footer_input_border" placeholder="Enter your email address">
+                    <div class="flex items-stretch w-full">
+                        <input type="email" class="h-10 py-2 px-4 text-white font-light text-sm border-t-1 border-b-1 border-l-1 bg-transparent footer_input_border flex-1" placeholder="Enter your email address">
 
-                        <button class="bg-rad text-white uppercase flex items-center justify-center w-[84px] text-base font-semibold">Send</button>
+                        <button class="bg-rad text-white uppercase flex items-center justify-center w-[84px] text-base font-semibold call_modal" data-modal="error">Send</button>
                     </div>
                 </div>
 
-                <div class="xl_offset_3 l_offset_3 m_offset_3"></div>
+                <div class="xl_offset_3 l_offset_3 m_hide"></div>
 
-                <div class="col_xl_3 col_l_3 col_m_3">
-                    <h6 class="text-white mb-4 font_ubuntu">Feedback request:</h6>
+                <div class="col_xl_3 col_l_3 col_m_6 col_s_12">
+                    <h6 class="text-white mb-4 font_ubuntu mt-10 md:mt-0">Feedback request:</h6>
 
-                    <div class="flex items-stretch">
-                        <input type="email" class="h-10 py-2 px-4 text-white font-light text-sm border-t-1 border-b-1 border-l-1 bg-transparent footer_input_border" placeholder="Enter your email address">
+                    <div class="flex items-stretch w-full">
+                        <input type="email" class="h-10 py-2 px-4 text-white font-light text-sm border-t-1 border-b-1 border-l-1 bg-transparent footer_input_border flex-1" placeholder="Enter your email address">
 
-                        <button class="bg-rad text-white uppercase flex items-center justify-center w-[84px] text-base font-semibold">Send</button>
+                        <button class="bg-rad text-white uppercase flex items-center justify-center w-[84px] text-base font-semibold call_modal" data-modal="succes">Send</button>
                     </div>
                 </div>
             </div>
@@ -497,7 +543,7 @@
             </div>
 
             <div class="row">
-                <div class="col_12">
+                <div class="col_12 s_hide">
                     <h6 class="text-white mb-3 font_ubuntu">Games</h6>
 
                     <div class="flex justify-between items-center mb-[104px]">
@@ -531,7 +577,7 @@
                             </div>
                         </div>
 
-                        <div class="flex gap-4">
+                        <div class="flex gap-4 m_hide">
                             <img src="img/racing-car.png" alt="">
 
                             <div>
@@ -541,7 +587,7 @@
                             </div>
                         </div>
 
-                        <div class="flex gap-4">
+                        <div class="flex gap-4 m_hide">
                             <img src="img/racing-car.png" alt="">
 
                             <div>
@@ -555,7 +601,7 @@
             </div>
 
             <div class="row">
-                <div class="col_xl_2 col_l_2 col_m_2">
+                <div class="col_xl_2 col_l_2 col_m_4 col_s_12">
                     <h6 class="text-white mb-3 font_ubuntu">Service & Support</h6>
 
                     <a href="" class="block text-base font-light text-white opacity-70 hover:opacity-100 mb-2">technical functioning</a>
@@ -565,8 +611,8 @@
                     <a href="" class="block text-base font-light text-white opacity-70 hover:opacity-100">maintenance</a>
                 </div>
 
-                <div class="col_xl_2 col_l_2 col_m_2">
-                    <h6 class="text-white mb-3 font_ubuntu">Distribution</h6>
+                <div class="col_xl_2 col_l_2 col_m_4 col_s_12">
+                    <h6 class="text-white mb-3 font_ubuntu mt-10 md:mt-0">Distribution</h6>
 
                     <a href="" class="block text-base font-light text-white opacity-70 hover:opacity-100 mb-2">retail batting shop</a>
 
@@ -577,9 +623,9 @@
                     <a href="" class="block text-base font-light text-white opacity-70 hover:opacity-100">terminal shop</a>
                 </div>
 
-                <div class="xl_offset_1 l_offset_1 m_offset_1"></div>
+                <div class="xl_offset_1 l_offset_1 m_hide s_hide"></div>
 
-                <div class="col_xl_7 col_l_7 col_m_7">
+                <div class="col_xl_7 col_l_7 col_m_4 s_hide">
                     <h6 class="text-white mb-3 font_ubuntu">Cetificate</h6>
                 </div>
             </div>
@@ -591,16 +637,16 @@
             </div>
 
             <div class="row">
-                <div class="col_xl_4 col_l_4 col_m_4">
-                    <p class="text-base font-light text-white opacity-50">© 2020 mohiogaming All rights reserved</p>
+                <div class="col_xl_4 col_l_4 col_m_12">
+                    <p class="text-xs md:text-base font-light text-white opacity-50 text-center mb-4 lg:mb-0 lg:text-left">© 2020 mohiogaming All rights reserved</p>
                 </div>
 
-                <div class="col_xl_4 col_l_4 col_m_4">
-                    <p class="text-base font-light text-white opacity-50 text-center">The Best of Cutting Edge Technologies for The Betting Shops </p>
+                <div class="col_xl_4 col_l_4 col_m_12">
+                    <p class="text-xs md:text-base font-light text-white opacity-50 text-center whitespace-nowrap mb-4 lg:mb-0">The Best of Cutting Edge Technologies for The Betting Shops </p>
                 </div>
 
-                <div class="col_xl_4 col_l_4 col_m_4">
-                    <div class="flex h-full items-center justify-end">
+                <div class="col_xl_4 col_l_4 col_m_12">
+                    <div class="flex h-full items-center lg:justify-end justify-center">
                         <a href="https://ukiepro.com/" target="_blank">
                             <img src="img/ukie_logo.svg" alt="">
                         </a>
@@ -609,5 +655,39 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal_overlay fixed top-0 bottom-0 left-0 right-0 items-center justify-center flex hidden">
+        <div class="bg-white game_card px-10 pt-8 pb-24 md:min-w-[490px] modal hidden" data-id="error">
+            <img src="img/modal_logo.svg" alt="">
+
+            <button class="absolute z-10 top-10 right-10 w-5 h-5 close">
+                <img src="img/modal_close.svg" alt="">
+            </button>
+
+            <p class="mt-16 text-center font_ubuntu text-rad text-[48px] font-bold mb-6">Oh no</p>
+
+            <p class="text-dark text-xl mx-auto max-w-[230px] text-center mb-14">
+                Something went wrong, please make sure you filed out try and again
+            </p>
+
+            <button class="btn orange w-[225px] mx-auto close">Go back</button>
+        </div>
+
+        <div class="bg-white game_card px-10 pt-8 pb-24 md:min-w-[490px] modal hidden" data-id="succes">
+            <img src="img/modal_logo.svg" alt="">
+
+            <button class="absolute z-10 top-10 right-10 w-5 h-5 close">
+                <img src="img/modal_close.svg" alt="">
+            </button>
+
+            <p class="mt-16 text-center font_ubuntu text-black text-[48px] font-bold mb-6">Success</p>
+
+            <p class="text-dark text-xl mx-auto max-w-[230px] text-center mb-14">
+                Your message was sent successfully
+            </p>
+
+            <button class="btn orange w-[225px] mx-auto close">Go back</button>
+        </div>
+    </div>
 </body>
 </html>
