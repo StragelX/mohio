@@ -502,14 +502,9 @@ h6 {
 
 .awards_carousel {
   .owl-nav {
-    width: 130%;
-    margin-left: -15%;
+    width: 110%;
+    margin-left: -5%;
     display: flex !important;
-
-    @media all and (max-width: 1050px) {
-      width: 120%;
-      margin-left: -10%;
-    }
 
     @media all and (max-width: 767px) {
       display: none !important;
@@ -582,7 +577,7 @@ h6 {
 
 .top_nav {
   @media all and (max-width: 1441px) {
-    padding-right: 6rem;
+    padding-right: 2rem;
   }
 }
 
@@ -621,6 +616,6 @@ h6 {
   }
 }
 
-.mob_inner_menu {
+.mob_inner_menu, .mob_nav {
   height: calc(100vh - 75px);
 }

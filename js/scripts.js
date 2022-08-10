@@ -35,7 +35,7 @@ $(document).ready(function () {
   if ($(".more_games_carousel")) {
     $(".more_games_carousel.owl-carousel").owlCarousel({
       loop: true,
-      // autoplay: true,
+      autoplay: true,
 
       responsive: {
         0: {
@@ -97,6 +97,7 @@ $(document).ready(function () {
         },
         1000: {
           items: 6,
+          margin: 50,
         },
       },
     });
