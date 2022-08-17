@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  AOS.init({
+    offset: 250,
+  });
+
   $(".show_mob_nav").click(function () {
     $(this).toggleClass("active");
     $(".mob_nav").toggleClass("active");
@@ -61,7 +65,7 @@ $(document).ready(function () {
   if ($(".main_distribution_carousel")) {
     $(".main_distribution_carousel.owl-carousel").owlCarousel({
       loop: true,
-      autoplay: true,
+      // autoplay: true,
 
       responsive: {
         0: {
@@ -165,7 +169,7 @@ $(document).ready(function () {
     },
     zoom: {
       enabled: true,
-      duration: 300, // don't foget to change the duration also in CSS
+      duration: 300,
       opener: function (element) {
         return element.find("img");
       },

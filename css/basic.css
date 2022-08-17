@@ -34,6 +34,12 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Clafita Miller";
+  src: url("../fonts/clafita_miller.otf");
+  font-weight: 400;
+  font-style: normal;
+}
 html {
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;

@@ -34,6 +34,18 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Clafita Miller";
+  src: url("../fonts/clafita_miller.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "brittanySignature";
+  src: url("../fonts/brittanySignature.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 html {
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
@@ -1413,6 +1425,50 @@ footer {
   background-color: #0e0e0e;
 }
 
+.hover_class {
+  overflow: hidden;
+}
+.hover_class > * {
+  z-index: 2;
+}
+.hover_class::before {
+  background-color: #c13001;
+  content: "";
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 120%;
+  transform: translateY(150%);
+  transition: transform 360ms;
+}
+.hover_class p {
+  transition: color 360ms;
+}
+.hover_class .arrow_btn span {
+  transform: translate(0) translateY(-100%);
+  background-color: #fff;
+  transition: transform 360ms;
+}
+.hover_class:hover {
+  color: #fff !important;
+}
+.hover_class:hover p {
+  transition: color 360ms;
+  color: #fff !important;
+}
+.hover_class:hover::before {
+  transform: translateY(0);
+  transition: transform 360ms;
+}
+.hover_class:hover .arrow_btn {
+  border: 1px solid white;
+}
+.hover_class:hover .arrow_btn span {
+  transition: transform 360ms;
+  transform: translate(0) translateY(0);
+}
+
 .btn {
   display: inline-flex;
   flex: none;
@@ -1428,6 +1484,25 @@ footer {
   text-align: center;
   text-transform: uppercase;
   transition: background-color 180ms, color 180ms;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn span {
+  cursor: pointer;
+}
+.btn::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 180ms;
+}
+.btn:hover::before {
+  transform: translateY(0);
+  transition: transform 180ms;
 }
 @media all and (max-width: 767px) {
   .btn.w-full {
@@ -1446,10 +1521,22 @@ footer {
   border: 1px solid #c13001;
   color: #fff;
 }
+.btn.orange:hover {
+  border: 1px solid #0e0e0e;
+}
+.btn.orange::before {
+  background-color: #0e0e0e;
+}
 .btn.black {
   background-color: #0e0e0e;
   border: 1px solid #0e0e0e;
   color: #fff;
+}
+.btn.black:hover {
+  border: 1px solid #c13001;
+}
+.btn.black::before {
+  background-color: #c13001;
 }
 .btn.white {
   background-color: transparent;
@@ -1457,10 +1544,12 @@ footer {
   border: 1px solid #0e0e0e;
 }
 .btn.white:hover {
-  background-color: #c13001;
-  border: 1px solid #c13001;
   color: #fff;
-  transition: background-color 180ms, color 180ms;
+  border: 1px solid #c13001;
+  transition: color 180ms;
+}
+.btn.white::before {
+  background-color: #c13001;
 }
 .btn.small {
   padding: 0 34px;
@@ -1477,7 +1566,56 @@ footer {
   width: 38px;
   height: 35px;
   border: 1px solid #707070;
-  background: url("../img/icon_arrow_right.svg") no-repeat center/10px auto;
+  overflow: hidden;
+}
+.arrow_btn:after {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 10px;
+  height: 20px;
+  opacity: 1;
+  transition: opacity 360ms;
+  background: transparent url("../img/icon_arrow_right.svg") no-repeat center/10px auto;
+}
+.arrow_btn::before {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 10px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 360ms;
+  background: transparent url("../img/small_arrow_white.svg") no-repeat center/8px auto;
+}
+.arrow_btn span {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #c13001;
+  transform: translate(-100%);
+  transition: transform 360ms;
+}
+.arrow_btn:hover {
+  border: 1px solid #c13001;
+}
+.arrow_btn:hover:after {
+  opacity: 0;
+  transition: opacity 360ms;
+}
+.arrow_btn:hover::before {
+  opacity: 1;
+  transition: opacity 360ms;
+}
+.arrow_btn:hover span {
+  transition: transform 360ms;
+  transform: translate(0);
 }
 
 .border-1 {
@@ -1547,9 +1685,12 @@ h6 {
   border-bottom: 1px solid #292929;
 }
 
+.min_h {
+  height: calc(100vh - 75px);
+}
+
 .main_top {
   position: relative;
-  min-height: calc(100vh - 75px);
 }
 .main_top::before {
   display: block;
@@ -1561,9 +1702,6 @@ h6 {
   right: 0;
   z-index: 2;
   background-image: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0.96) 46%, rgba(255, 255, 255, 0) 100%);
-}
-.main_top > * {
-  z-index: 3;
 }
 
 .game_card {
@@ -1721,7 +1859,7 @@ h6 {
   height: calc(100vh - 75px);
 }
 .game_top::before {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   content: "";
   top: 0;
@@ -1899,4 +2037,14 @@ h6 {
 
 .mob_inner_menu, .mob_nav {
   height: calc(100vh - 75px);
+}
+
+.font_cla {
+  font-family: "Clafita Miller";
+  transform: rotate(-15deg);
+}
+
+.font_brit {
+  font-family: "brittanySignature";
+  transform: rotate(-15deg);
 }/*# sourceMappingURL=styles.css.map */
