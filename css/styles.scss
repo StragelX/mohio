@@ -466,7 +466,7 @@ h6 {
     }
   }
 
-  p {
+  p, li {
     color: #121111;
     font-size: 20px;
     font-weight: 400;
@@ -482,7 +482,7 @@ h6 {
     margin-bottom: 16px;
 
     li {
-      font-size: 16px;
+      font-size: 20px;
 
       @media all and (max-width: 767px) {
         font-size: 14px;
