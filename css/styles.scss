@@ -113,7 +113,7 @@ footer {
   &:hover {
     color: #fff !important;
 
-    p {
+    p, h3 {
       transition: color 360ms;
       color: #fff !important;
     }
@@ -129,6 +129,14 @@ footer {
       span {
         transition: transform 360ms;
         transform: translate(0) translateY(0);
+      }
+
+      &::before {
+        opacity: 0 !important;
+      }
+
+      &::after {
+        opacity: 1 !important;
       }
     }
   }
@@ -171,6 +179,10 @@ footer {
     &::before {
       transform: translateY(0);
       transition: transform 180ms;
+    }
+
+    &.send.footer_btn {
+      border: 1px solid $rad;
     }
   }
 
@@ -236,6 +248,13 @@ footer {
     line-height: 43px;
     font-size: 16px;
     font-weight: 500;
+  }
+
+  &.send {
+    font-size: 1rem;
+    width: 84px;
+    height: 40px;
+    line-height: 40px;
   }
 }
 
@@ -309,7 +328,7 @@ footer {
   border-width: 1px;
 }
 
-h1,h2,h4,h5,h5,h6 {
+h1,h2,h3,h4,h5,h5,h6 {
   color: $dark;
   font-family: "Ubuntu";
   font-weight: 700;
@@ -375,7 +394,7 @@ h6 {
 }
 
 .min_h {
-  height: calc(100vh - 75px);
+  min-height: calc(100vh - 75px);
 }
 
 .main_top {
@@ -399,8 +418,6 @@ h6 {
 }
 
 .products_section {
-  background: url("../img/products_bg.jpg") no-repeat center / cover;
-
   @media all and (max-width: 1370px) {
     padding-top: 5vh !important;
     padding-bottom: 5vh !important;
@@ -781,4 +798,88 @@ h6 {
 .font_brit {
   font-family: "brittanySignature";
   transform: rotate(-15deg);
+}
+
+picture {
+  img, source {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.language_drop {
+  a {
+    display: block;
+  }
+
+  &.active {
+    height: auto !important;
+  }
+}
+
+.one_faq {
+  .cont {
+    display: none;
+  }
+
+  img {
+    transition: transform 180ms;
+    transform: rotate(0);
+  }
+
+  &.active {
+    .cont {
+      display: block;
+    }
+
+    img {
+      transition: transform 180ms;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.one_worker {
+  p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  .social {
+    display: none;
+  }
+
+  &.active {
+    z-index: 10;
+
+    p {
+      -webkit-line-clamp: unset;
+    }
+
+    .iner {
+      box-shadow: 0 25px 50px 0 rgb(0 0 0 / 0.5);
+      position: absolute;
+      top: 340px;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+
+    .social {
+      display: flex;
+    }
+  }
+}
+
+div#map {
+  margin-left: -80px;
+
+  a[href="https://simplemaps.com"] {
+    pointer-events: none;
+    z-index: 0;
+    position: absolute;
+    right: 10000px;
+  }
 }

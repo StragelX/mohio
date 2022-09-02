@@ -40,12 +40,6 @@
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: "brittanySignature";
-  src: url("../fonts/brittanySignature.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
 html {
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
@@ -1453,7 +1447,7 @@ footer {
 .hover_class:hover {
   color: #fff !important;
 }
-.hover_class:hover p {
+.hover_class:hover p, .hover_class:hover h3 {
   transition: color 360ms;
   color: #fff !important;
 }
@@ -1467,6 +1461,12 @@ footer {
 .hover_class:hover .arrow_btn span {
   transition: transform 360ms;
   transform: translate(0) translateY(0);
+}
+.hover_class:hover .arrow_btn::before {
+  opacity: 0 !important;
+}
+.hover_class:hover .arrow_btn::after {
+  opacity: 1 !important;
 }
 
 .btn {
@@ -1503,6 +1503,9 @@ footer {
 .btn:hover::before {
   transform: translateY(0);
   transition: transform 180ms;
+}
+.btn:hover.send.footer_btn {
+  border: 1px solid #c13001;
 }
 @media all and (max-width: 767px) {
   .btn.w-full {
@@ -1557,6 +1560,12 @@ footer {
   line-height: 43px;
   font-size: 16px;
   font-weight: 500;
+}
+.btn.send {
+  font-size: 1rem;
+  width: 84px;
+  height: 40px;
+  line-height: 40px;
 }
 
 .arrow_btn {
@@ -1622,7 +1631,7 @@ footer {
   border-width: 1px;
 }
 
-h1, h2, h4, h5, h5, h6 {
+h1, h2, h3, h4, h5, h5, h6 {
   color: #0e0e0e;
   font-family: "Ubuntu";
   font-weight: 700;
@@ -1686,7 +1695,7 @@ h6 {
 }
 
 .min_h {
-  height: calc(100vh - 75px);
+  min-height: calc(100vh - 75px);
 }
 
 .main_top {
@@ -1708,9 +1717,6 @@ h6 {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.16);
 }
 
-.products_section {
-  background: url("../img/products_bg.jpg") no-repeat center/cover;
-}
 @media all and (max-width: 1370px) {
   .products_section {
     padding-top: 5vh !important;
@@ -2047,4 +2053,68 @@ h6 {
 .font_brit {
   font-family: "brittanySignature";
   transform: rotate(-15deg);
+}
+
+picture img, picture source {
+  height: 100%;
+  width: 100%;
+}
+
+.language_drop a {
+  display: block;
+}
+.language_drop.active {
+  height: auto !important;
+}
+
+.one_faq .cont {
+  display: none;
+}
+.one_faq img {
+  transition: transform 180ms;
+  transform: rotate(0);
+}
+.one_faq.active .cont {
+  display: block;
+}
+.one_faq.active img {
+  transition: transform 180ms;
+  transform: rotate(180deg);
+}
+
+.one_worker p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.one_worker .social {
+  display: none;
+}
+.one_worker.active {
+  z-index: 10;
+}
+.one_worker.active p {
+  -webkit-line-clamp: unset;
+}
+.one_worker.active .iner {
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 340px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.one_worker.active .social {
+  display: flex;
+}
+
+div#map {
+  margin-left: -80px;
+}
+div#map a[href="https://simplemaps.com"] {
+  pointer-events: none;
+  z-index: 0;
+  position: absolute;
+  right: 10000px;
 }/*# sourceMappingURL=styles.css.map */
