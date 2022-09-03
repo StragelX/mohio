@@ -1382,6 +1382,7 @@ a h6 {
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 body.no_scroll {
   overflow: hidden;
@@ -1640,9 +1641,19 @@ h1, h2, h3, h4, h5, h5, h6 {
 h1 {
   font-size: 64px;
 }
+@media all and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
+}
 
 h2 {
   font-size: 48px;
+}
+@media all and (max-width: 767px) {
+  h2 {
+    font-size: 32px;
+  }
 }
 
 h3 {
@@ -2112,9 +2123,26 @@ picture img, picture source {
 div#map {
   margin-left: -80px;
 }
+@media all and (max-width: 767px) {
+  div#map {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
 div#map a[href="https://simplemaps.com"] {
   pointer-events: none;
   z-index: 0;
   position: absolute;
   right: 10000px;
+}
+
+@media all and (max-width: 767px) {
+  *[class*=col_] {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .row {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
 }/*# sourceMappingURL=styles.css.map */
