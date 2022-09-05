@@ -307,4 +307,10 @@ $(document).ready(function () {
       );
     }
   };
+
+  if (window.location.hash && window.location.hash.slice(1, -1) == "team") {
+    let id = window.location.hash.slice(1);
+    document.getElementById(id).click();
+    document.getElementById(id).scrollIntoView();
+  }
 });
