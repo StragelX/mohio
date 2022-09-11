@@ -427,6 +427,11 @@ h6 {
 }
 
 .products_section {
+  @media all and (max-width: 1550px) {
+    padding-top: 5vh !important;
+    padding-bottom: 5vh !important;
+  }
+
   @media all and (max-width: 1370px) {
     padding-top: 5vh !important;
     padding-bottom: 5vh !important;
@@ -469,6 +474,23 @@ h6 {
     color: $dark;
     font-family: "Ubuntu";
     margin-bottom: 24px;
+    text-transform: uppercase;
+
+    @media all and (max-width: 767px) {
+      font-size: 22px;
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+
+    @media all and (max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+
+  h2 {
+    font-size: 28px;
 
     @media all and (max-width: 767px) {
       font-size: 22px;
@@ -755,6 +777,10 @@ h6 {
 // regio end
 
 .top_nav {
+  @media all and (max-width: 1550px) {
+    padding-right: 90px;
+  }
+
   @media all and (max-width: 1441px) {
     padding-right: 2rem;
   }

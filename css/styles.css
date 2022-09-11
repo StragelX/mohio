@@ -1728,6 +1728,12 @@ h6 {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.16);
 }
 
+@media all and (max-width: 1550px) {
+  .products_section {
+    padding-top: 5vh !important;
+    padding-bottom: 5vh !important;
+  }
+}
 @media all and (max-width: 1370px) {
   .products_section {
     padding-top: 5vh !important;
@@ -1765,9 +1771,26 @@ h6 {
   color: #0e0e0e;
   font-family: "Ubuntu";
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 @media all and (max-width: 767px) {
   .text-section h1, .text-section h2, .text-section h3, .text-section h4, .text-section h5, .text-section h6 {
+    font-size: 22px;
+  }
+}
+.text-section h1 {
+  font-size: 36px;
+}
+@media all and (max-width: 767px) {
+  .text-section h1 {
+    font-size: 24px;
+  }
+}
+.text-section h2 {
+  font-size: 28px;
+}
+@media all and (max-width: 767px) {
+  .text-section h2 {
     font-size: 22px;
   }
 }
@@ -2017,6 +2040,11 @@ h6 {
   opacity: 0;
 }
 
+@media all and (max-width: 1550px) {
+  .top_nav {
+    padding-right: 90px;
+  }
+}
 @media all and (max-width: 1441px) {
   .top_nav {
     padding-right: 2rem;
