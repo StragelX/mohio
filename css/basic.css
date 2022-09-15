@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   src: url("../fonts/segoeUI/segoeuI.ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   src: url("../fonts/segoeUI/segoeuIbold.ttf");
   font-weight: 700;
   font-style: normal;
@@ -53,7 +53,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
   background-color: #f0f0f0;
   color: #121111;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
