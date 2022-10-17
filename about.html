@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col_xl_11 col_l_10 flex no_padding_right px-0 lg:pl-[18px]">
                     <nav class="flex items-center justify-between w-full pr-4 top_nav">
-                        <button class="h-[75px] px-3 flex items-center justify-center show_mob_nav l_hide xl_hide">
+                        <button class="h-[75px] w-[50px] px-3 flex items-center justify-center show_mob_nav l_hide xl_hide">
                             <img src="img/burger_icon.svg" alt="" class="shown">
 
                             <img src="img/burger_cros_icon.svg" alt="" class="hidden">
@@ -317,10 +317,21 @@
     
                 <div class="row z-10">
                     <div class="col_xl_4 col_l_4 col_m_4 col_s_12">
-                        <picture class="mb-6 md:mb-0">
-                            <source srcset="img/about.webp" type="image/webp">
-                            <img src="img/about.jpg" alt="">
-                        </picture>
+                        <div class="relative">
+                            <picture class="mb-36 md:mb-0 img_wrap block relative z-10">
+                                <source srcset="img/about.webp" type="image/webp">
+                                <img src="img/about.jpg" alt="">
+                            </picture>
+    
+                            <div class="md:hidden z0 absolute bg-rad mob_25 h-40 text-center text-white flex items-end pb-8 justify-center font_ubuntu">
+                                <p class="text-7xl font-bold">25</p>
+    
+                                <div>
+                                    <p class="text-2xl font-bold uppercase leading-4">Years</p>
+                                    <p class="text-base	font-black opacity-70 uppercase">Expiriens</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
     
                     <div class="col_xl_4 col_l_4 col_m_4 col_s_12">
@@ -358,17 +369,17 @@
                     <div class="xl_offset_2 l_offset_1"></div>
     
                     <div class="col_xl_8 col_l_10 col_m_12 col_s_12">
-                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-[35px] items-stretch mt-10 md:mt-0">
-                            <div class="bg-white flex-1 px-6 pt-6 pb-12 flex flex-col items-center justify-center">
-                                <p class="font_ubuntu text-rad font-bold text-[64px] text-center mb-4">12+</p>
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-[35px] items-stretch mt-10 md:mt-0">
+                            <div class="bg-white flex-1 p-3 md:p-6 md:pb-12 flex flex-col items-center justify-center">
+                                <p class="font_ubuntu text-rad font-bold text-[40px] md:text-[64px] text-center mb-2 md:mb-4">12+</p>
 
-                                <p class="text-center font_ubuntu text-base font-normal text-[#161413] min-h-[62px] uppercase">popular and hight-profitable games</p>
+                                <p class="text-center font_ubuntu text-sm md:text-base font-normal text-[#161413] h-10 md:h-auto md:min-h-[62px] uppercase">popular and hight-profitable games</p>
                             </div>
 
                             <div class="bg-white flex-1 px-6 pt-6 pb-12">
-                                <p class="font_ubuntu text-rad font-bold text-[64px] text-center mb-4">24/7</p>
+                                <p class="font_ubuntu text-rad font-bold text-[40px] md:text-[64px] text-center mb-4">24/7</p>
 
-                                <p class="text-center font_ubuntu text-base font-normal text-[#161413] min-h-[62px] uppercase">realy quick client support</p>
+                                <p class="text-center font_ubuntu text-sm md:text-base font-normal text-[#161413]  h-10 md:h-auto md:min-h-[62px] uppercase">realy quick client support</p>
                             </div>
 
                             <div class="bg-white flex-1 px-6 pt-6 pb-12">

@@ -47,6 +47,12 @@ body {
   }
 }
 
+html {
+  &.no_scroll {
+    overflow: hidden;
+  }
+}
+
 nav {
   height: 75px;
 }
@@ -69,6 +75,26 @@ header {
   background-color: $dark;
   height: 75px;
   z-index: 51;
+
+  @media all and (max-width: 1850px) {
+    padding-right: 50px;
+  }
+
+  @media all and (max-width: 1800px) {
+    padding-right: 100px;
+  }
+
+  @media all and (max-width: 1750px) {
+    padding-right: 150px;
+  }
+
+  @media all and (max-width: 1700px) {
+    padding-right: 200px;
+  }
+
+  @media all and (max-width: 1550px) {
+    padding-right: 0;
+  }
 }
 
 main {
@@ -94,7 +120,7 @@ footer {
     position: absolute;
     left: 0;
     right: 0;
-    height: 120%;
+    height: 150%;
     transform: translateY(150%);
     transition: transform 360ms;
   }
@@ -111,33 +137,35 @@ footer {
     }
   }
 
-  &:hover {
-    color: #fff !important;
-
-    p, h3 {
-      transition: color 360ms;
+  @media all and (min-width: 1000px) {
+    &:hover {
       color: #fff !important;
-    }
-
-    &::before {
-      transform: translateY(0);
-      transition: transform 360ms;
-    }
-
-    .arrow_btn {
-      border: 1px solid white;
-      
-      span {
-        transition: transform 360ms;
-        transform: translate(0) translateY(0);
+  
+      p, h3, .text-black {
+        transition: color 360ms;
+        color: #fff !important;
       }
-
+  
       &::before {
-        opacity: 0 !important;
+        transform: translateY(-20%);
+        transition: transform 360ms;
       }
-
-      &::after {
-        opacity: 1 !important;
+  
+      .arrow_btn {
+        border: 1px solid white;
+        
+        span {
+          transition: transform 360ms;
+          transform: translate(0) translateY(0);
+        }
+  
+        &::before {
+          opacity: 0 !important;
+        }
+  
+        &::after {
+          opacity: 1 !important;
+        }
       }
     }
   }
@@ -397,6 +425,10 @@ h6 {
     right: 100px;
   }
 
+  @media all and (max-width: 1450px) {
+    right: 60px;
+  }
+
   @media all and (max-width: 1400px) {
     right: 50px;
   }
@@ -505,7 +537,7 @@ h6 {
     color: #121111;
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 
     @media all and (max-width: 767px) {
       font-size: 14px;
@@ -535,6 +567,22 @@ h6 {
         left: -20px;
         top: 10px;
         background: url('../img/rotated_red_square.svg') no-repeat center / contain;
+
+        @media all and (max-width: 767px) {
+          top: 5px;
+        }
+      }
+    }
+  }
+
+  ol {
+    list-style: auto;
+    list-style-position: inside;
+
+    li {
+      &::marker {
+        font-weight: 600;
+        color: rgb(193 48 1);
       }
     }
   }
@@ -749,7 +797,7 @@ h6 {
 }
 
 .main_top_games_carousel {
-  margin-left: -15px;
+  margin-left: -38px;
 
   @media all and (max-width: 767px) {
     margin-left: 0;
@@ -887,13 +935,6 @@ picture {
 }
 
 .one_worker {
-  p {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-  }
-
   .social {
     display: none;
   }
@@ -902,7 +943,7 @@ picture {
     z-index: 10;
 
     p {
-      -webkit-line-clamp: unset;
+      display: block !important;
     }
 
     .iner {
@@ -912,10 +953,19 @@ picture {
       width: 100%;
       left: 0;
       right: 0;
+
+      @media all and (max-width: 767px) {
+        position: relative;
+        top: 0;
+      }
     }
 
     .social {
       display: flex;
+    }
+
+    picture.hidden {
+      display: block !important;
     }
   }
 }
@@ -946,4 +996,100 @@ div#map {
     margin-left: -12px;
     margin-right: -12px;
   }
+}
+
+.line_clamp_5 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.scroll-to-top {
+  position: relative;
+}
+
+.btn-position {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 20;
+}
+
+.btn-style {
+  border-radius: 50%;
+  background-color: $rad;
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0.5;
+  transition: opacity 180ms;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity 180ms;
+  }
+}
+
+.in_game_six_hours {
+  @media all and (max-width: 1450px) {
+    left: 250px !important;
+  }
+
+  @media all and (max-width: 767px) {
+    top: -70px;
+    right: 3px;
+    left: auto !important;
+    width: 95px;
+  }
+}
+
+.about_25 {
+  @media all and (max-width: 1400px) {
+    margin-top: 0 !important;
+  }
+}
+
+section, body, html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.stars_wrap {
+  &:hover {
+    .star {
+      img.hidden {
+        display: block !important;
+
+        
+      }
+    }
+  }
+}
+
+.star:hover {
+  & ~ .star {
+    img.hidden {
+      display: none !important;
+    }
+  }
+}
+
+.star.active {
+  img.hidden {
+    display: block !important;
+  }
+}
+
+.mob_25 {
+  bottom: -120px;
+  left: -16px;
+  right: -16px;
+  z-index: 0;
 }

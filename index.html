@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,12 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.autoplay.js"></script>
     <script src="js/owl.navigation.js"></script>
-    <!-- <script src="js/mapdata.js"></script> -->
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
     <script src="js/scripts.js"></script>
 </head>
 
@@ -82,7 +84,7 @@
     </header>
 
     <nav class="mob_nav l_hide xl_hide fixed top-[75px] bottom-0 left-0 right-0 z-[100] h-screen">
-        <div class="mob_inner_menu bg-dark px-4 py-4 w-56 flex flex-col">
+        <div class="mob_inner_menu bg-dark px-4 py-4 w-56 flex flex-col overflow-auto">
             <a href="about.html" class="text-lg text-white block py-3">About us</a>
             <a href="cooperat.html" class="text-lg text-white block py-3">Cooperation</a>
             <a href="news.html" class="text-lg text-white block py-3">News</a>
@@ -131,17 +133,21 @@
         </div>
     </nav>
 
-    <nav class="fixed overflow-hidden main_mav top-[75px] w-full bg-grey z-50 flex flex-col">
+    <nav class="fixed overflow-hidden main_mav top-[75px] w-full bg-white md:bg-grey z-50 flex flex-col">
         <section class="products_section flex-1">
-            <div class="absolute z-0 top-0 bottom-0 left-0 right-0 h-full">
+            <div class="absolute z-0 top-0 bottom-0 left-0 right-0 h-full hidden md:block">
                 <picture class="w-full h-full">
                     <source srcset="img/products_bg.webp" type="image/webp" class="w-full h-full object-cover">
                     <img src="img/products_bg.png" alt="" class="w-full h-full object-cover">
                 </picture>
             </div>
             
-            <div class="container h-full">
+            <div class="container md:h-full min-h-full h-auto">
                 <div class="row h-full">
+                    <div class="absolute top-0 right-4 md:top-[110px] w-16 md:w-28 md:right-0 m_hide">
+                      <img src="img/six_hour_demo.png" alt="six hour demo">
+                    </div>
+
                     <div class="col_xl_10 xl_offset_1 col_l_10 l_offset_1 col_m_12 col_s_12 h-full">
                         <div class="flex flex-col justify-center h-full">
                           <p class="font_ubuntu text-dark font-bold text-[24px] md:text-[32px] mb-3 md:mb-6">Gaming Platform</p>
@@ -212,9 +218,11 @@
                                   </div>
                               </div>
 
-                              <a href="https://wa.me/000000000" class="btn black" target="_blank">
-                                  <span>order consultation</span>
-                              </a>
+                              <div class="flex self-stretch items-center">
+                                <a href="https://wa.me/000000000" class="btn black" target="_blank">
+                                    <span>order consultation</span>
+                                </a>
+                              </div>
                           </div>
 
                           <a href="games.html" class="text-rad text-base block mt-4 hover:underline">See all products</a>
@@ -317,24 +325,24 @@
             <div class="container z-10 min_h">
                 <div class="row min_h" data-aos="fade-up">
                     <div class="col_12 min_h">
-                        <div class="flex flex-col justify-center min_h pt-28">
+                        <div class="flex flex-col justify-center min_h pt-6 md:pt-28">
                             <div class="flex items-center gap-3 mb-2">
                                 <img src="img/rotated_red_square.svg" alt="">
         
                                 <h3 class="Providing font-light text-[24px] md:text-4xl text-black">Providing</h3>
                             </div>
     
-                            <h1 class="lg:max-w-[65%] font_ubuntu font-bold text-[36px] leading-tight lg:text-[80px] text-black md:leading-[78px] mb-3">
+                            <h1 class="lg:max-w-[65%] font_ubuntu font-bold text-[36px] leading-none lg:text-[80px] text-black md:leading-[78px] mb-3">
                                 The Best of Cutting Edge Technologies for The Betting Shops 
                             </h1>
     
-                            <h2 class="text-rad font_ubuntu font-light text-lg md:text-4xl mb-10 md:mt-8">Top-revenue betting products</h2>
+                            <h2 class="text-rad font_ubuntu font-light text-lg md:text-4xl mb-6 md:mb-10 md:mt-8">Top-revenue betting products</h2>
     
                             <a href="https://wa.me/000000000" class="btn orange mb-6" target="_blank">
                                 <span>заказать консультацию</span>
                             </a>
     
-                            <div class="px-0 md:px-[18px]">
+                            <div class="px-0 ml-[-18px] md:ml-0 md:px-[18px]">
                                 <div class="main_top_games_carousel owl-carousel">
                                     <div>
                                         <a href="" class="hover_class h-[200px] bg-white game_card my-5 mx-[18.5px] flex flex-col items-center justify-center">
@@ -395,7 +403,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col_12" data-aos="fade-right">
-                        <div class="absolute top-[-85px] md:top-[110px] right-0 m_hide">
+                        <div class="absolute top-[-110px] md:top-[110px] -right-5 md:right-0 m_hide">
                             <img src="img/six_hour_demo.png" alt="">
                         </div>
 
@@ -436,7 +444,7 @@
                     <div class="xl_offset_1 l_offset_1 m_hide"></div>
 
                     <div class="col_xl_3 col_l_3 col_m_6 col_s_12"  data-aos="fade-right">
-                        <div class="flex items-center gap-[22px] mb-[60px]">
+                        <div class="flex items-center gap-[22px] mb-6 md:mb-[60px]">
                             <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
 
                             <div>
@@ -447,7 +455,7 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-[22px] mb-[60px]">
+                        <div class="flex items-center gap-[22px] mb-6 md:mb-[60px]">
                             <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
 
                             <div>
@@ -458,7 +466,7 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-[22px] mb-[60px] md:mb-0">
+                        <div class="flex items-center gap-[22px] mb-6 md:mb-[60px] md:mb-0">
                             <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
 
                             <div>
@@ -495,7 +503,7 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-[22px]">
+                        <div class="flex items-center justify-center md:justify-start gap-[22px] w-full -mt-4">
                             <a href="https://wa.me/000000000" class="btn white" target="_blank">
                                 <span>order consultation</span>
                             </a>
@@ -518,7 +526,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col_12 px-0 md-[18px]" data-aos="fade-left">
+                    <div class="col_12 !px-0 sm:p-[12px]" data-aos="fade-left">
                         <div class="main_distribution_carousel owl-carousel mb-10 md:mb-20">
                             <a href="channel.html" class="hover_class h-[420px] bg-white game_card my-5 mx-[18.5px] flex flex-col items-center justify-center px-6 pt-3 pb-12">
                                 <img src="img/racing-car.png" alt="" class="max-h-[110px] mb-4 !w-auto">
@@ -626,7 +634,7 @@
             </div>
         </section>        
 
-        <section class="py-20">
+        <section class="py-20 overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col_12" data-aos="zoom-in-up">
@@ -668,7 +676,7 @@
 
                     <div class="col_xl_5 col_l_5 m_hide s_hide">
                         <div class="bg-rad h-32 flex justify-end z-0 mt-[-50px] mb-10">
-                            <div class="absolute bg-rad w-32 h-32 text-center text-white flex flex-col items-center justify-center font_ubuntu">
+                            <div class="absolute bg-rad w-32 h-32 text-center text-white flex flex-col items-center justify-center font_ubuntu md:border-l-white md:border-l-[1px]">
                                 <p class="text-7xl font-bold">25</p>
                                 <p class="text-2xl font-bold uppercase leading-4">Years</p>
                                 <p class="text-base	font-black opacity-70 uppercase">Expiriens</p>
@@ -764,7 +772,7 @@
 
                         <div class="row">
                             <div class="col_xl_6 col_l_6 col_m_6">
-                                <h6 class="text-[#121111] mt-[60px] mb-4">Profitability in the market</h6>
+                                <h6 class="text-[#121111] mt-[60px] mb-4 font-bold">Profitability in the market</h6>
         
                                 <p class="text-base font-normal text-[#121111] leading-[27px] mb-4">
                                     MOHIO is a developer and supplier of premium and highly profitable software for the betting industry. With constant improvements and innovations, MOHIO products remain extremely popular among the players and maintain their profitability in the market.
@@ -1019,10 +1027,10 @@
                     </div>
 
                     <div class="col_xl_5 col_l_5 col_m_12 col_s_12" data-aos="fade-up">
-                        <div class="bg-white game_card h-full absolute top-0 left-0 right-0 bottom-0 z-0"></div>
+                        <div class="bg-white game_card h-auto bottom-[60px] lg:h-full absolute top-0 left-0 right-0 lg:bottom-0 z-0"></div>
 
-                        <div class="testimonials_carousel owl-carousel md:px-[105px] h-full">
-                            <div class="pt-10">
+                        <div class="testimonials_carousel owl-carousel pb-6 lg:pb-0 md:px-[105px] h-full">
+                            <div class="pt-10 pb-[135px] relative">
                                 <div class="flex justify-center mb-7">
                                     <img src="img/testimonails_icon.svg" alt="" class="!w-[59px]">
                                 </div>
@@ -1033,13 +1041,30 @@
                                 </p>
 
                                 <div class="flex justify-between items-center">
-                                    <p class="text-black font-semibold text-base leading-[27px]">John Doe</p>
+                                    <p class="text-black font-semibold text-base leading-[27px] hidden lg:block">John Doe</p>
 
-                                    <p class="text-base text-black font-light leading-[27px]">20.04.2022</p>
+                                    <p class="text-base text-black font-light leading-[27px] hidden lg:block">20.04.2022</p>
                                 </div>
+
+                                <div class="absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center lg:hidden">
+                                  <div class="flex items-center justify-center gap-2 mb-4 h-4">
+                                      <img src="img/star_icon.svg" alt="">
+                                      <img src="img/star_icon.svg" alt="">
+                                      <img src="img/star_icon.svg" alt="">  
+                                      <img src="img/star_icon.svg" alt="">
+                                      <img src="img/star_icon.svg" alt="">
+                                  </div>
+  
+                                  <div class="border-[#6a6a6a] border-1 rounded-full h-[74px] w-[74px] img_wrap">
+                                      <picture>
+                                          <source srcset="img/temp_face.webp" type="image/webp">
+                                          <img src="img/temp_face.jpg" alt="">
+                                      </picture>
+                                  </div>
+                              </div>
                             </div>
 
-                            <div class="pt-10">
+                            <div class="pt-10 relative">
                                 <div class="flex justify-center mb-7">
                                     <img src="img/testimonails_icon.svg" alt="" class="!w-[59px]">
                                 </div>
@@ -1054,23 +1079,57 @@
 
                                     <p class="text-base text-black font-light leading-[27px]">20.04.2022</p>
                                 </div>
+
+                                <div class="absolute -bottom-[55px] left-0 right-0 flex flex-col items-center justify-center">
+                                  <div class="flex items-center justify-center gap-2 mb-4 h-4">
+                                      <img src="img/star_icon.svg" alt="">
+                                      <img src="img/star_icon.svg" alt="">
+                                      <img src="img/star_icon.svg" alt="">  
+                                      <img src="img/star_icon.svg" alt="">
+                                      <img src="img/star_icon.svg" alt="">
+                                  </div>
+
+                                  <div class="border-[#6a6a6a] border-1 rounded-full h-[74px] w-[74px] mb-1.5 img_wrap">
+                                      <picture>
+                                          <source srcset="img/temp_face.webp" type="image/webp">
+                                          <img src="img/temp_face.jpg" alt="">
+                                      </picture>
+                                  </div>
+                              </div>
                             </div>
 
-                            <div class="pt-10">
-                                <div class="flex justify-center mb-7">
-                                    <img src="img/testimonails_icon.svg" alt="" class="!w-[59px]">
-                                </div>
-    
-                                <p class="text-sm opacity-80 text-black font-normal leading-[25px] mb-4">
-                                    The manufacturer offered an extensive line with a worthy list of events. 
-                                    Moreover, the catalogue contains such “exotic” solutions as, for example, bets on dog and drone racing.
-                                </p>
+                            <div class="pt-10 relative">
+                              <div class="flex justify-center mb-7">
+                                  <img src="img/testimonails_icon.svg" alt="" class="!w-[59px]">
+                              </div>
 
-                                <div class="flex justify-between items-center">
-                                    <p class="text-black font-semibold text-base leading-[27px]">John Doe</p>
+                              <p class="text-sm opacity-80 text-black font-normal leading-[25px] mb-4">
+                                  The manufacturer offered an extensive line with a worthy list of events. 
+                                  Moreover, the catalogue contains such “exotic” solutions as, for example, bets on dog and drone racing.
+                              </p>
 
-                                    <p class="text-base text-black font-light leading-[27px]">20.04.2022</p>
+                              <div class="flex justify-between items-center">
+                                  <p class="text-black font-semibold text-base leading-[27px]">John Doe</p>
+
+                                  <p class="text-base text-black font-light leading-[27px]">20.04.2022</p>
+                              </div>
+
+                              <div class="absolute -bottom-[55px] left-0 right-0 flex flex-col items-center justify-center">
+                                <div class="flex items-center justify-center gap-2 mb-4 h-4">
+                                    <img src="img/star_icon.svg" alt="">
+                                    <img src="img/star_icon.svg" alt="">
+                                    <img src="img/star_icon.svg" alt="">  
+                                    <img src="img/star_icon.svg" alt="">
+                                    <img src="img/star_icon.svg" alt="">
                                 </div>
+
+                                <div class="border-[#6a6a6a] border-1 rounded-full h-[74px] w-[74px] mb-1.5 img_wrap">
+                                    <picture>
+                                        <source srcset="img/temp_face.webp" type="image/webp">
+                                        <img src="img/temp_face.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -1080,7 +1139,7 @@
     </main>
 
     <footer class="pt-8 pb-10">
-      <div class="m_hide absolute bg-rad w-32 h-32 text-center text-white flex flex-col items-center justify-center font_ubuntu footer_year"  data-aos="fade-up">
+      <div class="m_hide absolute bg-rad w-32 h-32 text-center text-white flex flex-col items-center justify-center font_ubuntu border-l-[1px] border-l-white footer_year"  data-aos="fade-up">
           <p class="text-7xl font-bold">25</p>
           <p class="text-2xl font-bold uppercase leading-4">Years</p>
           <p class="text-base	font-black opacity-70 uppercase">Expiriens</p>
@@ -1205,61 +1264,61 @@
               <div class="col_12 s_hide" data-aos="fade-up">
                   <h6 class="text-white mb-3 font_ubuntu">Games</h6>
 
-                  <div class="flex justify-between items-center mb-[104px]">
-                      <div class="flex gap-4">
-                          <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
+                  <div class="owl-carousel footer_carousel mb-[104px]">
+                    <div class="flex gap-4">
+                      <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px] flex-none">
 
-                          <div>
-                              <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
+                      <div class="flex-1">
+                          <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
 
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
-                          </div>
+                          <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
+                          <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
                       </div>
+                    </div>
 
-                      <div class="flex gap-4">
-                          <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
+                    <div class="flex gap-4">
+                        <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
 
-                          <div>
-                              <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
+                        <div>
+                            <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
 
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
-                          </div>
-                      </div>
+                            <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
+                            <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
+                        </div>
+                    </div>
 
-                      <div class="flex gap-4">
-                          <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
+                    <div class="flex gap-4">
+                        <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
 
-                          <div>
-                              <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
+                        <div>
+                            <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
 
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
-                          </div>
-                      </div>
+                            <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
+                            <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
+                        </div>
+                    </div>
 
-                      <div class="flex gap-4 m_hide">
-                          <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
+                    <div class="flex gap-4">
+                        <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
 
-                          <div>
-                              <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
+                        <div>
+                            <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
 
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
-                          </div>
-                      </div>
+                            <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
+                            <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
+                        </div>
+                    </div>
 
-                      <div class="flex gap-4 m_hide">
-                          <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
+                    <div class="flex gap-4">
+                        <img src="img/racing-car.png" alt="" class="h-14 md:h-[95px]">
 
-                          <div>
-                              <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
+                        <div>
+                            <a href="games.html" class="mt-5 mb-2 font_ubuntu text-white font-bold text-xl block hover:underline">Lotteries</a>
 
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
-                              <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
-                          </div>
-                      </div>
+                            <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Live Sports,</a>
+                            <a href="game.html" class="text-base font-normal text-white color_b2 hover:underline">Pre Match Sports</a>
+                        </div>
+                    </div>
                   </div>
               </div>
           </div>
