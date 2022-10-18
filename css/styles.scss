@@ -939,11 +939,19 @@ picture {
     display: none;
   }
 
+  .desc {
+    display: none;
+  }
+
   &.active {
     z-index: 10;
 
     p {
       display: block !important;
+    }
+
+    .desc {
+      display: block;
     }
 
     .iner {
@@ -957,6 +965,7 @@ picture {
       @media all and (max-width: 767px) {
         position: relative;
         top: 0;
+        box-shadow: none;
       }
     }
 

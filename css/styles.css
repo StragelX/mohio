@@ -2191,11 +2191,17 @@ picture img, picture source {
 .one_worker .social {
   display: none;
 }
+.one_worker .desc {
+  display: none;
+}
 .one_worker.active {
   z-index: 10;
 }
 .one_worker.active p {
   display: block !important;
+}
+.one_worker.active .desc {
+  display: block;
 }
 .one_worker.active .iner {
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.5);
@@ -2209,6 +2215,7 @@ picture img, picture source {
   .one_worker.active .iner {
     position: relative;
     top: 0;
+    box-shadow: none;
   }
 }
 .one_worker.active .social {
